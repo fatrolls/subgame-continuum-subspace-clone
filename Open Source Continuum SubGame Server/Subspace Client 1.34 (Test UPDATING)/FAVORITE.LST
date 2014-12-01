@@ -1,0 +1,44 @@
+VIE Alpha East,207.168.13.10,5380
+#A zone purely for beginners. All BLUE dots on radar are enemies.
+VIE Alpha West,207.168.33.10,5380
+#The Alpha zone is designed for beginners only. This is the best Zone to start in.
+VIE Chaos East,207.168.13.10,2400
+#A pure combat zone. Get in there and kill all enemies.
+VIE Chaos Nevada,208.210.171.64,2600
+#A pure combat game. Go in and kill all enemies.
+VIE Chaos West,207.168.33.10,2500
+#A pure combat zone. Grab a ship and kill all enemies.
+VIE Delta East,207.168.13.10,3500
+#A test zone that houses various prototype games.
+VIE Dueling Arizona,206.165.5.153,3400
+#A user run zone for one on one combat.
+VIE Jackpot West,207.168.33.10,2000
+#The objective is to get all the flags. The longer the game goes on the more valuable the final points.
+VIE League East,207.168.13.10,3200
+#A player run league zone.
+VIE PowerBall Nevada,208.210.171.64,3300
+#Two Poerballs are floating in the zone. Pick them up and put them in the eneies goal (red on radar). Pass to teamates by firing.
+VIE Rabbit West,207.168.33.10,3600
+#Players with flags become "rabbits" with super ships who score X10 points. Kill a rabbit and YOU get the power!
+VIE Running East,207.168.13.10,2100
+#Once you pick up a flag you never drop it. First team to get all of them wins.
+VIE Speed West,207.168.33.10,2900
+#Short 20min games. All ships start powered up. The player with most points after each 20min game wins.
+VIE Turf Arizona,206.165.5.153,3000
+#The obctevice in this zone is to grab as many flag areas and hold them from enbemy attack.
+VIE War East,207.168.13.10,2200
+#First team to get all the flags wins. Flags can only be carried for a minute or so. Make sure you drop them at your base.
+VIE War West,207.168.33.10,2300
+#Several flags are scattered around the map. Pick them up and carry them to your base before you drop them. The team that gets all the flags wins.
+X_Local Server,127.0.0.1,5000
+#A test server
+CS Extreme Games [Backup],198.23.202.76,5000
+#Extreme Games & Trench Wars [Backup] hosted by www.CamSpark.com. If you are interested in hosting your server with on CS contact me at contact@camspark.com
+SSCJ Devastation,69.164.220.203,7022
+#Devastation, reborn! - The Ultimate Base Fighting Experience. You will never want to leave. (DevaZone.net)http://www.devazone.net/ (Devastation forums)http://deva.ssforum.net/ ss://deva.welcome-to-the-machine.com
+SSCU Trench Wars,66.36.247.83,5400
+#SSCU Trench Wars - The most popular zone in Subspace/Continuum! Battle within the Trenches! Original Sysops: DoCk> and PriitK - Current Sysops: M_M God, Beasty and Demonic - http://www.trenchwars.org ss://server.trenchwars.org
+SSCU Extreme Games,66.36.247.83,7900
+#[Extreme Games]The fastest and boldest warzone flagging available. For more information visit http://www.extreme-games.net Owners: Pointman, The Junky, Zeus, Croaker  ss://zone.extreme-games.net
+My first test zone.,127.0.0.1,5000
+#Subspace 1.32 zone
