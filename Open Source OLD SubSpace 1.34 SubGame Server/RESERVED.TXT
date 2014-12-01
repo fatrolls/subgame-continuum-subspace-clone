@@ -1,0 +1,4 @@
+//Names in this list are not
+//available to the players
+Sysop
+
