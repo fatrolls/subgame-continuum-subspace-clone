@@ -1,0 +1,2871 @@
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML//EN">
+<html>
+
+<head>
+<meta http-equiv="Content-Type"
+content="text/html; charset=iso-8859-1">
+<meta name="Template"
+content="C:\PROGRAM FILES\MICROSOFT OFFICE\OFFICE\html.dot">
+<meta name="GENERATOR" content="Microsoft FrontPage 2.0">
+<title>SubSpace/OS Help File</title>
+</head>
+
+<body link="#0000FF" vlink="#800080">
+
+<p><font face="Arial"></font>&nbsp;</p>
+
+<p><font size="2" face="Arial">SubSpace /OS&nbsp;</font></p>
+
+<p><font size="2" face="Arial"></font>&nbsp;</p>
+
+<p><font size="2" face="Arial"><b>Introduction.</b></font></p>
+
+<p><font size="2" face="Arial"></font>&nbsp;</p>
+
+<p><font size="2" face="Arial">SubSpace /OS is an in game
+programming system that allows you to create and maintain your
+own SubSpace games (or Zones as they are called) on a remote
+server.</font></p>
+
+<p><font size="2" face="Arial"></font>&nbsp;</p>
+
+<p><font size="2" face="Arial">SubSpace is configurable in just
+about every regard. This amount of configurability means that
+making a SubSpace Zone can be a complex process. Fear not ,most
+zones that you will want to make can easily be made using an
+existing template with minor changes.</font></p>
+
+<p><font size="2" face="Arial"></font>&nbsp;</p>
+
+<p><font size="2" face="Arial">Creating a Zone can be a thankless
+task. You spend hours making maps/artwork and configuring your
+zone and then everyone hates it - or even worse nobody comes at
+all. On the flip side it is an amazing feeling to design a game
+and have others enjoy themselves in it. Either way the prime
+motivation for you making a zone should be - yourself. If you
+like it then the chances are someone else will.</font></p>
+
+<p><font size="2" face="Arial"></font>&nbsp;</p>
+
+<p><font size="2" face="Arial">Welcome to the world of
+SubSpace/OS Game design.</font></p>
+
+<p><font size="2" face="Arial"></font>&nbsp;</p>
+
+<p><font size="2" face="Arial"></font>&nbsp;</p>
+
+<p><font size="2" face="Arial">Basic Design Philosophy.</font></p>
+
+<p><font size="2" face="Arial"></font>&nbsp;</p>
+
+<p><font size="2" face="Arial">Rule number one of multiplayer
+game design is - do not design the game, that&#146;s the players
+job. </font></p>
+
+<p><font size="2" face="Arial"></font>&nbsp;</p>
+
+<p><font size="2" face="Arial">In a single player game you can
+design a story and script out what the player is going to do.
+Most single player games are puzzle games of some sort, from the
+latest 3d shooter to realtime wargames the formula is the same -
+Do X action to get to the reward Y, repeat until CD space runs
+out. The reward is usually in the form of some animated sequence
+or a new weapon or level, however the game is always scripted to
+the game designers vision. This is very good for single player
+games but when applied to a multiplayer environment it is
+disastrous. This is because multiplayer games do not end, they
+are infinitely replayable.</font></p>
+
+<p><font size="2" face="Arial"></font>&nbsp;</p>
+
+<p><font size="2" face="Arial">A single player game designer is
+like a sculptor whose vision we get to enjoy. A multiplayer game
+designer is more like an architect who although he designs the
+building cannot control what goes on within it.</font></p>
+
+<p><font size="2" face="Arial"></font>&nbsp;</p>
+
+<p><font size="2" face="Arial">The truth is that when dealing
+with real people THE SIMPLER THE BETTER. Do not over complicate
+the player with unnecessary details or constrict his activities
+EVEN when it is good for him. We are all familiar with this
+phenomenon in real life. How many times have you been irritated
+with a car door that autolocks every time you close it forcing
+you to unlock every time? Or even worse how many times have you
+bought software that tries to force you to register automatically
+and you have to figure out a way of stopping it?</font></p>
+
+<p><font size="2" face="Arial"></font>&nbsp;</p>
+
+<p><font size="2" face="Arial">With this in mind all the
+information needed to play your zone should be brief and easy to
+understand. Background stories and info are always entertaining
+but should be presented AFTER the critical game information not
+before. </font></p>
+
+<p><font size="2" face="Arial"></font>&nbsp;</p>
+
+<p><font size="2" face="Arial">Players may well enjoy a 4 page
+&quot;novella&quot; about the war between the great zarsquids of
+beta 3' and the terran imperium but in the end if it says -
+&quot;The object is to kill all opposing players. Human ships on
+freq zero move really fast. Zarsquids on freq one have
+cloak.&quot; then you may want to consider putting that at the
+start of the text not the end.</font></p>
+
+<p><font size="2" face="Arial"></font>&nbsp;</p>
+
+<p><font size="2" face="Arial">Finally unlike a single player
+game don&#146;t try to tell the players to &quot;go this point,
+do this, then go to this point.&quot; it ain&#146;t gonna happen.
+People instinctively know how to play, they don&#146;t need to be
+given too many rules. Put some humans in a room add a ball and
+they will have fun.</font></p>
+
+<p><font size="2" face="Arial"></font>&nbsp;</p>
+
+<p><font size="2" face="Arial">Level design.</font></p>
+
+<p><font size="2" face="Arial"></font>&nbsp;</p>
+
+<p><font size="2" face="Arial">Great architects are not the ones
+who make the gaudy strange looking buildings, they are the ones
+who make buildings that people feel comfortable inside.</font></p>
+
+<p><font size="2" face="Arial"></font>&nbsp;</p>
+
+<p><font size="2" face="Arial">You should take this to heart when
+designing the SubSpace level map for your game. I have seen
+dozens of maps get left empty simply because the designer
+insisted on spelling his name in tile blocks or created pretty
+pictures all over it. Conversely players flock to levels that are
+functional and designed for their convenience instead of the
+designers ego.</font></p>
+
+<p><font size="2" face="Arial"></font>&nbsp;</p>
+
+<p><font size="2" face="Arial">A few practical tips.</font></p>
+
+<p><font size="2" face="Arial"></font>&nbsp;</p>
+
+<p><font size="2" face="Arial">Limit &quot;wormholes&quot; to
+three or less if possible. Wormholes are huge burden on the
+client and most players do not have a machine above a P90.</font></p>
+
+<p><font size="2" face="Arial"></font>&nbsp;</p>
+
+<p><font size="2" face="Arial">Do not make levels dense. Huge
+strips of tiles may run fine on your machine but there is a
+reason that most &quot;official&quot; SubSpace maps are very pipe
+like. Slower machines simply cannot handle huge tile areas. Try
+to keep all your walls to one tile thickness.</font></p>
+
+<p><font size="2" face="Arial"></font>&nbsp;</p>
+
+<p><font size="2" face="Arial">Don&#146;t draw &quot;radar
+pictures&quot; in the tiles. Not only does it make you look lame
+but it means you are designing for looks not gameplay.</font></p>
+
+<p><font size="2" face="Arial"></font>&nbsp;</p>
+
+<p><font size="2" face="Arial">Avoid &quot;choke points&quot; in
+your level if you are allowing mines. Any area ten tiles or less
+that is frequently traveled WILL be mined.</font></p>
+
+<p><font size="2" face="Arial"></font>&nbsp;</p>
+
+<p><font size="2" face="Arial">If your game allows safe zones put
+lots of them around. Remember one safe zone means one place to
+mine.</font></p>
+
+<p><font size="2" face="Arial"></font>&nbsp;</p>
+
+<p><font size="2" face="Arial">ZONE OR SCENARIO?</font></p>
+
+<p><font size="2" face="Arial"></font>&nbsp;</p>
+
+<p><font size="2" face="Arial">The difference between a zone and
+a scenario is that a Scenario happens at set time and a Zone is
+always running. This is because scenarios tend to be more complex
+and involve more planning than a regular Zone game. I must
+confess I love the thrill of a scenario when I know only have one
+life and once I die - that&#146;s it. For others they find the
+work and planning of a scenario too tedious when all they want to
+do is get in and have a blast. Designing your game to be played
+once or once a week can be beneficial as it does focus a large
+group together at once on the flip side if you are organizing
+this sort of event you should assume at least 20% non
+-attendance. Don&#146;t take it personal organizing a meeting
+with people from all over the world at a particular time is a
+very difficult thing, just plan for the 20% not to turn up.</font></p>
+
+<p><font size="2" face="Arial"></font>&nbsp;</p>
+
+<p><font size="2" face="Arial">WHAT TO DO WHEN YOU FAIL.</font></p>
+
+<p><font size="2" face="Arial"></font>&nbsp;</p>
+
+<p><font size="2" face="Arial">You will fail - we all do. You
+have spent two weeks working on a great zone with art &amp; sound
+pack and nobody is playing it. Your friends in the game always
+claim they have to go to &quot;dinner&quot; when you mention
+playing in your zone - what did you do wrong?</font></p>
+
+<p><font size="2" face="Arial"></font>&nbsp;</p>
+
+<p><font size="2" face="Arial">Firstly did you post your zone on
+the SubSpace message boards? (http://SubSpace.vie.com)</font></p>
+
+<p><font size="2" face="Arial"></font>&nbsp;</p>
+
+<p><font size="2" face="Arial">Did you contact the numerous
+SubSpace guilds and organizations that love to promote new
+events?</font></p>
+
+<p><font size="2" face="Arial"></font>&nbsp;</p>
+
+<p><font size="2" face="Arial">Are your instructions simple?
+Remember when most people enter a game they WILL NOT read
+instructions no matter how much you insist that it is vital. So
+they will ask other players, if it can be answered in a sentence
+then they will get an answer otherwise they will be ignored and
+will leave.</font></p>
+
+<p><font size="2" face="Arial"></font>&nbsp;</p>
+
+<p><font size="2" face="Arial">Are you annoying? This is the
+toughest but sometimes you can put so much work into something
+you become a bit of a pain about it. Constantly emailing your
+(soon to be ex-) friends to come and play in it or spamming other
+zones with ads for yours. Nobody likes someone who is pushy, have
+some good manners and if you catch your friends playing in
+another zone don&#146;t try to make them feel guilty. You wont
+make them feel guilty (mothers do it much better than you ever
+can) but you will make them want to avoid you or play under
+alias.</font></p>
+
+<p><font size="2" face="Arial"></font>&nbsp;</p>
+
+<p><font size="2" face="Arial">Is your game unplayable? Is your
+zone like this? &quot;Bullets fire twice as fast! All ships fly
+faster than the jav! fire 8 level 4 bombs at once with 64
+shrapnel! 6000 energy!&quot; If so - your zone sucks.</font></p>
+
+<p><font size="2" face="Arial"></font>&nbsp;</p>
+
+<p><font size="2" face="Arial">&quot;Super Zones&quot; are the
+typical rookie zone that vets avoid like the plague. The thinking
+tends to be that &quot;16 shrapnel is fun so 32 will be double as
+much fun!&quot; it isn&#146;t. Game restraint and balance is a
+very delicate process and a well balanced ship mixture is tough
+to get right. When in doubt DOWNGRADE don&#146;t upgrade, you
+will always be better off.</font></p>
+
+<p><font size="2" face="Arial"></font>&nbsp;</p>
+
+<p><font size="2" face="Arial">For every ship positive give a
+negative. for Example in my revised ships I gave the warbird the
+ability to use stealth for nearly zero energy because it was so
+small. Conversely I reduced its energy max to 1200 because it was
+so small. Always balance. </font></p>
+
+<p><font size="2" face="Arial"></font>&nbsp;</p>
+
+<p><font size="2" face="Arial">You may have a great connection
+but to most players fast firing bullets , zippy ships and lots of
+weapons mean one thing - LAG. Regular modem users will look at
+any &quot;super&quot; zone and leave immediately. You should only
+EXTREMELY RARELY increase ship stats over the default maximums,
+we spent over a year and a half getting them to play well over a
+modem so tread carefully, you have been warned.</font></p>
+
+<p><font size="2" face="Arial"></font>&nbsp;</p>
+
+<p><font size="2" face="Arial">GAME BALANCE</font></p>
+
+<p><font size="2" face="Arial"></font>&nbsp;</p>
+
+<p><font size="2" face="Arial">A player enters your game for the
+first time. </font></p>
+
+<p><font size="2" face="Arial">BAM he gets killed.</font></p>
+
+<p><font size="2" face="Arial">Newbie gets restarted.</font></p>
+
+<p><font size="2" face="Arial">He sees another enemy and tries to
+get away, no good thee enemy is much faster than him....</font></p>
+
+<p><font size="2" face="Arial">BAM he gets killed.</font></p>
+
+<p><font size="2" face="Arial">Newbie gets restarted.</font></p>
+
+<p><font size="2" face="Arial">Newbie tried to &quot;green&quot;
+up however more powered up ships are doing the same.</font></p>
+
+<p><font size="2" face="Arial">BAM he gets killed.</font></p>
+
+<p><font size="2" face="Arial">Newbie leaves game.</font></p>
+
+<p><font size="2" face="Arial"></font>&nbsp;</p>
+
+<p><font size="2" face="Arial">I had no fun at all in that zone,
+yes I was that newbie. The mistake? We had the max energy set to
+3000. This is a real example from a test zone we ran a year ago,
+we found it was next to impossible for zero bounty ship to green
+up fast enough to survive in a zone where 3000 energy ships where
+flying. The week after we reduced max energy to 1700. We never
+realized that one stat could unbalance the game so much, but it
+did.</font></p>
+
+<p><font size="2" face="Arial"></font>&nbsp;</p>
+
+<p><font size="2" face="Arial">Always think of the poor newbie
+when you design your game. A good rule of thumb should be that
+even the best game player in the universe should be dying at
+least once an hour with most good players dying once every five
+minutes. If you find expert players surviving for as long as they
+want in your game then you have a problem of game balance. </font></p>
+
+<p><font size="2" face="Arial"></font>&nbsp;</p>
+
+<p><font size="2" face="Arial">As a good test you should let a
+friend of yours get a full powered ship then you fight him with
+zero power ups. If you don&#146;t beat him one time out of five
+then your zone is unbalanced. This is fine if the aim of the zone
+is not combat (flag grabbing for example) but if it&#146;s purely
+combat then you should make changes. </font></p>
+
+<p><font size="2" face="Arial"></font>&nbsp;</p>
+
+<p><font size="2" face="Arial">Unbalancing stats: Some stats
+really unbalance the game if they are set to high with a slow
+greening process then they make the game unplayable for the
+newbie.</font></p>
+
+<p><font size="2" face="Arial"></font>&nbsp;</p>
+
+<p><font size="2" face="Arial">Max energy: The newbies level one
+guns are simply incapable of doing enough damage to the fully
+powered enemy. Think long and hard before raising this stat.</font></p>
+
+<p><font size="2" face="Arial">Max Charge rate: Sure it feels
+great to be able to blaze away constantly with bullets but if you
+cant kill anyone then it reduces the point somewhat. Throw in
+extra &quot;super&quot; prizes instead of raising this stat.</font></p>
+
+<p><font size="2" face="Arial"></font>&nbsp;</p>
+
+<p><font size="2" face="Arial">Max Thrust &amp; Rotate: The
+Warbird default really is about the max maneuverability you
+should give any ship. Given latency issues any more than that and
+your zone will become know as &quot;lag city&quot;.</font></p>
+
+<p><font size="2" face="Arial"></font>&nbsp;</p>
+
+<p><font size="2" face="Arial">Max Speed: A tricky one to judge
+but its no fun to never be able to run down a super fast ship,
+particularly in flag games.</font></p>
+
+<p><font size="2" face="Arial"></font>&nbsp;</p>
+
+<p><font size="2" face="Arial">Things to help balance your game.</font></p>
+
+<p><font size="2" face="Arial"></font>&nbsp;</p>
+
+<p><font size="2" face="Arial">There are several things that are
+useful to balancing your game and keeping the expert players from
+ruining your zone. These elements are easy to spot because the
+expert pilots will complain about them being unfair. Pay close
+attention these complaints from expert pilots as they are very
+useful tools in your design arsenal. Usually experts complain
+when they die &quot;unfairly&quot; this can be good and bad. If
+someone YOU KNOW is an expert is making these comments then you
+have a GREAT mine of information. Remember this ONLY applies to
+pilots who you KNOW are experts, not just whiners.</font></p>
+
+<p><font size="2" face="Arial"></font>&nbsp;</p>
+
+<p><font size="2" face="Arial">Here are some common examples.</font></p>
+
+<p><font size="2" face="Arial"></font>&nbsp;</p>
+
+<p><font size="2" face="Arial">&quot;Damn shrapnel&quot; - Great,
+this is as it should be. Players should die if they get to near
+combat. Complaints about this are a good thing as experts will
+always complain about something and this is the least important
+it shows your game is well balanced.</font></p>
+
+<p><font size="2" face="Arial"></font>&nbsp;</p>
+
+<p><font size="2" face="Arial">&quot;Damn bursters&quot; - Check
+the complainers win/loss ratio. If its 1/1 or worse then he may
+be right (most experts run around 2/1 or better) and you may want
+to reduce the burst damage or frequency.</font></p>
+
+<p><font size="2" face="Arial"></font>&nbsp;</p>
+
+<p><font size="2" face="Arial">&quot;Damn Neg Terriers ( or
+insert ship name)&quot; - Probably not an expert. Most good
+pilots can out maneuver any neg ship, but if valid he is probably
+complaining that he has to kill lower powered ships to get to the
+powerful ones. This can be a problem which is easily addressed by
+reducing the starting ships offensive capability slightly (even a
+minor rotation rate reduction is devastating to a beginning
+ship). </font></p>
+
+<p><font size="2" face="Arial"></font>&nbsp;</p>
+
+<p><font size="2" face="Arial">&quot;Damn Lag&quot; - This is the
+most worrying because it almost certainly ISNT lag he is
+complaining about. Experts have a good &quot;feel&quot; for how
+many bullets it takes to down a ship. If you have tinkered with
+the stats too much then he may be blaming lag. Look at the stats
+again and reduce some of the weirder ones back towards the
+defaults. If it is lag then you are probably overloading modems
+due to the &quot;super ship&quot; syndrome. Tone down the stats
+put less bullets &amp; bombs on screen.</font></p>
+
+<p><font size="2" face="Arial"></font>&nbsp;</p>
+
+<p><font size="2" face="Arial"></font>&nbsp;</p>
+
+<p><font size="2" face="Arial"></font>&nbsp;</p>
+
+<p><font size="2" face="Arial"></font>&nbsp;</p>
+
+<p><font size="2" face="Arial">SETTING UP YOUR OWN SERVER</font></p>
+
+<p><font size="2" face="Arial"></font>&nbsp;</p>
+
+<p><font size="2" face="Arial">To set up your own server you will
+need the following&#133;.</font></p>
+
+<p><font size="2" face="Arial"></font>&nbsp;</p>
+
+<p><font size="2" face="Arial">A nice fast PC (p133 and above
+with 32 meg RAM is probably the minimum)</font></p>
+
+<p><font size="2" face="Arial">A nice internet connection. If you
+are going to host a server we highly recommend you have at least
+a ISDN line. Slower than this will simply be an unpleasant
+experience.</font></p>
+
+<p><font size="2" face="Arial">A static IP is reccomended if you
+intend to make your server popular.</font></p>
+
+<p><font size="2" face="Arial"></font>&nbsp;</p>
+
+<p><font size="2" face="Arial">To set up the server simply create
+a directory EG:&quot;serversample&quot; and put the following
+files in it.</font></p>
+
+<p><font size="2" face="Arial"></font>&nbsp;</p>
+
+<p><font face="Arial"><img src="Image.gif" width="402"
+height="379"></font></p>
+
+<p><font size="2" face="Arial"></font>&nbsp;</p>
+
+<p><font size="2" face="Arial"></font>&nbsp;</p>
+
+<p><font size="2" face="Arial">QUICK &amp; DIRTY</font></p>
+
+<p><font size="2" face="Arial"></font>&nbsp;</p>
+
+<p><font size="2" face="Arial"></font>&nbsp;</p>
+
+<p><font size="2" face="Arial">To get a zone running really
+quickly edit the SERVER.INI file.</font></p>
+
+<p><font size="2" face="Arial">Change the SYSOP password to
+something you want.</font></p>
+
+<p><font size="2" face="Arial"></font>&nbsp;</p>
+
+<p><font size="2" face="Arial">Edit your FAVORITES.LST file and
+add</font></p>
+
+<p><font size="2" face="Arial">My zone,127.0.0.1,900</font></p>
+
+<p><font size="2" face="Arial">#My test zone</font></p>
+
+<p><font size="2" face="Arial"></font>&nbsp;</p>
+
+<p><font size="2" face="Arial">drop to the command prompt and
+type</font></p>
+
+<p><font size="2" face="Arial"></font>&nbsp;</p>
+
+<p><font size="2" face="Arial">SUBGAME /NB</font></p>
+
+<p><font size="2" face="Arial"></font>&nbsp;</p>
+
+<p><font size="2" face="Arial">Then log into the game with the
+SYSOP password added onto your regular password preceded by a *</font></p>
+
+<p><font size="2" face="Arial">EG: Password = jackal</font></p>
+
+<p><font size="2" face="Arial">Type *jackal</font></p>
+
+<p><font size="2" face="Arial"></font>&nbsp;</p>
+
+<p><font size="2" face="Arial">Now enter your server and hit ESC
+C you may now change as many parameters as you want. As soon as
+you hit ESC then the server will recycle.</font></p>
+
+<p><font size="2" face="Arial"></font>&nbsp;</p>
+
+<p><font size="2" face="Arial"></font>&nbsp;</p>
+
+<p><font size="2" face="Arial"></font>&nbsp;</p>
+
+<p><font size="2" face="Arial"></font>&nbsp;</p>
+
+<p><font size="2" face="Arial">Lets go through these files one by
+one.</font></p>
+
+<p><font size="2" face="Arial"></font>&nbsp;</p>
+
+<p><font size="2" face="Arial">_soccer.lvl</font></p>
+
+<p><font size="2" face="Arial">This is the level file for the
+zone. Level editors can be found from the SubSpace Website
+(SubSpace.vie.com) or by entering the PRACTICE OFFLINE arena and
+holding down SHIFT+CTRL for the built in map editor. </font></p>
+
+<p><font size="2" face="Arial"></font>&nbsp;</p>
+
+<p><font size="2" face="Arial">SUBBILL.EXE</font></p>
+
+<p><font size="2" face="Arial">This application stores and keeps
+track of players scores and accounts. It is NOT necessary to have
+the billing.exe running to run SubSpace (see SUBGAME.EXE) neither
+is is nessecary to run the SUBBILL.EXE on the same machine as the
+server (see SERVER.INI)</font></p>
+
+<p><font size="2" face="Arial"></font>&nbsp;</p>
+
+<p><font size="2" face="Arial">SUBBILL.CFG</font></p>
+
+<p><font size="2" face="Arial">Do NOT change any of the
+parameters in here with one exception.</font></p>
+
+<p><font size="2" face="Arial">ALLOW NEW USERS can be set to ZERO
+if you do not want any new users to log in.</font></p>
+
+<p><font size="2" face="Arial">The BILLING PASSWORD must match
+the billing password in the server.ini</font></p>
+
+<p><font size="2" face="Arial"></font>&nbsp;</p>
+
+<p><font size="2" face="Arial">Moderate.txt</font></p>
+
+<p><font size="2" face="Arial">A list of users who are given
+moderator access. The format for this list is the name of the
+user followed by a line break EG:</font></p>
+
+<p><font size="2" face="Arial">USERNAME</font></p>
+
+<p><font size="2" face="Arial">USERNAME</font></p>
+
+<p><font size="2" face="Arial">USERNAME</font></p>
+
+<p><font size="2" face="Arial"></font>&nbsp;</p>
+
+<p><font size="2" face="Arial">News.txt</font></p>
+
+<p><font size="2" face="Arial">The news file for the zone, put in
+here zone rules and latest info. The user is given the choice of
+reading it when he enters the zone.</font></p>
+
+<p><font size="2" face="Arial"></font>&nbsp;</p>
+
+<p><font size="2" face="Arial">Obscene.txt</font></p>
+
+<p><font size="2" face="Arial">Players who have &quot;block
+obscene messages&quot; active never see any message that contains
+any words from this list. In here we have listed the most common
+words that people want blocked. You can add to this as you see
+fit.</font></p>
+
+<p><font size="2" face="Arial">RESERVED.TXT</font></p>
+
+<p><font size="2" face="Arial">This file contains reserved user
+names that cannot be entered. So for example you may want to
+reserve SYSOP. This means that no one can use that name or create
+one containing that name.</font></p>
+
+<p><font size="2" face="Arial"></font>&nbsp;</p>
+
+<p><font size="2" face="Arial">SERVER.CFG</font></p>
+
+<p><font size="2" face="Arial">This file is examined in detail in
+the SERVER CONFIGURATION section.</font></p>
+
+<p><font size="2" face="Arial"></font>&nbsp;</p>
+
+<p><font size="2" face="Arial">SERVER.INI</font></p>
+
+<p><font size="2" face="Arial">This file contains all of the
+general server data setup. Lets go through each of the
+parameters,</font></p>
+
+<p><font size="2" face="Arial"></font>&nbsp;</p>
+
+<p><font size="2" face="Arial">[Custom]</font></p>
+
+<p><font size="2" face="Arial">ArenaMode=0</font></p>
+
+<p><font size="2" face="Arial"></font>&nbsp;</p>
+
+<p><font size="2" face="Arial">This governs whether or not to
+allow users to create zone on your server. This is an advanced
+feature that is not available at the present/</font></p>
+
+<p><font size="2" face="Arial"></font>&nbsp;</p>
+
+<p><font size="2" face="Arial">[Arena]</font></p>
+
+<p><font size="2" face="Arial">ArenaMaxPlayers=35</font></p>
+
+<p><font size="2" face="Arial">This determines how many players
+you allow in each ARENA. An ARENA is a game. Each server actually
+runs a ZONE and each ZONE can have multiple ARENA&#146;S. This
+parameter is the absolute MAXIMUM players per game.</font></p>
+
+<p><font size="2" face="Arial"></font>&nbsp;</p>
+
+<p><font size="2" face="Arial">ArenaDesiredPlayers=30</font></p>
+
+<p><font size="2" face="Arial">This determines your DESIRED
+players per ARENA. This is you want 30 players per game then
+after 30 the ZONE will create another arena. However users from
+that ARENA can move to the first arena upto to the maximum (in
+this case 35)</font></p>
+
+<p><font size="2" face="Arial"></font>&nbsp;</p>
+
+<p><font size="2" face="Arial">ArenaMinimumPlayers=5</font></p>
+
+<p><font size="2" face="Arial">This is the minimum players in an
+arena before they are sent a message telling them that they would
+be wise to maove to a more populated one.</font></p>
+
+<p><font size="2" face="Arial"></font>&nbsp;</p>
+
+<p><font size="2" face="Arial">SpawnKeepScores=0</font></p>
+
+<p><font size="2" face="Arial">This determines whether or not
+player created spawns keep track of scores. This defaults to ZERO
+or OFF you can turn it on by changing it to one. The main reason
+for having it OFF is that players can easily create a zone with
+their buddies and kill each other to rack up points.</font></p>
+
+<p><font size="2" face="Arial"></font>&nbsp;</p>
+
+<p><font size="2" face="Arial">MaxArenas=100</font></p>
+
+<p><font size="2" face="Arial">This is the maximum number of
+ARENAS that you will allow to be created in your ZONE.</font></p>
+
+<p><font size="2" face="Arial"></font>&nbsp;</p>
+
+<p><font size="2" face="Arial">MaxArenasMemory=64000</font></p>
+
+<p><font size="2" face="Arial">This is the memory which subarenas
+are alowed to take up (useful if your machine is low on memory)
+The default is 64 meg but you will rarely use above 16.</font></p>
+
+<p><font size="2" face="Arial"></font>&nbsp;</p>
+
+<p><font size="2" face="Arial"></font>&nbsp;</p>
+
+<p><font size="2" face="Arial">[Comms]</font></p>
+
+<p><font size="2" face="Arial">MaxQueueToLogin=16</font></p>
+
+<p><font size="2" face="Arial">PacketHistoryMax=2000</font></p>
+
+<p><font size="2" face="Arial">IncomingBufferSize=131072</font></p>
+
+<p><font size="2" face="Arial">OutgoingBufferSize=131072</font></p>
+
+<p><font size="2" face="Arial">EncryptMode=1</font></p>
+
+<p><font size="2" face="Arial">UnreliableBufferSize=128</font></p>
+
+<p><font size="2" face="Arial">TransportBufferSize=160</font></p>
+
+<p><font size="2" face="Arial"></font>&nbsp;</p>
+
+<p><font size="2" face="Arial">None of these should be modified.</font></p>
+
+<p><font size="2" face="Arial"></font>&nbsp;</p>
+
+<p><font size="2" face="Arial">[Misc]</font></p>
+
+<p><font size="2" face="Arial">RegisterKickShareware=1</font></p>
+
+<p><font size="2" face="Arial">Kicks of shareware users in favor
+of full version users when servers are full. Set to ZERO to allow
+equal rights.</font></p>
+
+<p><font size="2" face="Arial"></font>&nbsp;</p>
+
+<p><font size="2" face="Arial">MaxSharewarePlayers=-1</font></p>
+
+<p><font size="2" face="Arial">This determines the maximum number
+of shareware players allowed in your zone. &#150;1 means NO
+limit.</font></p>
+
+<p><font size="2" face="Arial"></font>&nbsp;</p>
+
+<p><font size="2" face="Arial">MaxPlayers=60</font></p>
+
+<p><font size="2" face="Arial">This is the absolute maxmum
+players allowed on your ZONE in all arenas.</font></p>
+
+<p><font size="2" face="Arial"></font>&nbsp;</p>
+
+<p><font size="2" face="Arial">MenuKickOutDelay=12000</font></p>
+
+<p><font size="2" face="Arial">Don&#146;t change.</font></p>
+
+<p><font size="2" face="Arial"></font>&nbsp;</p>
+
+<p><font size="2" face="Arial">LogPoints=0</font></p>
+
+<p><font size="2" face="Arial">Don&#146;t change.</font></p>
+
+<p><font size="2" face="Arial"></font>&nbsp;</p>
+
+<p><font size="2" face="Arial">PointUpdateDiff=500</font></p>
+
+<p><font size="2" face="Arial">How often the server sends point
+updates to the user. Don&#146;t change.</font></p>
+
+<p><font size="2" face="Arial"></font>&nbsp;</p>
+
+<p><font size="2" face="Arial">JackpotBroadcastPoints=0</font></p>
+
+<p><font size="2" face="Arial">When a Jackpot reaches this many
+points a message is sent to ALL ZONES linked to that billing
+server.</font></p>
+
+<p><font size="2" face="Arial"></font>&nbsp;</p>
+
+<p><font size="2" face="Arial">ServerLog=0</font></p>
+
+<p><font size="2" face="Arial"><i>If set to one the server will
+log all events to a text file. Not very useful.</i></font></p>
+
+<p><font size="2" face="Arial"></font>&nbsp;</p>
+
+<p><font size="2" face="Arial">KeepAliveDelay=400</font></p>
+
+<p><font size="2" face="Arial"><i>How long in MS before the
+server sends a dummy packet to a user to keep him alive.
+Don&#146;t change</i>.</font></p>
+
+<p><font size="2" face="Arial"></font>&nbsp;</p>
+
+<p><font size="2" face="Arial">DefaultLevelFile=_soccer.lvl</font></p>
+
+<p><font size="2" face="Arial"><i>The level file used for this
+zone. This name can be whatever you want.</i></font></p>
+
+<p><font size="2" face="Arial"></font>&nbsp;</p>
+
+<p><font size="2" face="Arial"></font>&nbsp;</p>
+
+<p><font size="2" face="Arial">Port=5000</font></p>
+
+<p><font size="2" face="Arial"><i>The port that this zone listens
+and communicates on. Not much point in changing this unless you
+have certain firewall problems. Each SERVER that you run MUST
+have a different port. So if running 2 servers on the same box
+you must have 2 sepearte port numbers.</i></font></p>
+
+<p><font size="2" face="Arial"></font>&nbsp;</p>
+
+<p><font size="2" face="Arial">[CPU]</font></p>
+
+<p><font size="2" face="Arial">LoopDelay=0</font></p>
+
+<p><font size="2" face="Arial">ProcessMaxTime=4</font></p>
+
+<p><font size="2" face="Arial">SleepPerIteration=0</font></p>
+
+<p><font size="2" face="Arial">SlowIterationWarningLevel=100</font></p>
+
+<p><font size="2" face="Arial"><i>Don&#146;t change any of these.</i></font></p>
+
+<p><font size="2" face="Arial"></font>&nbsp;</p>
+
+<p><font size="2" face="Arial">[Permission]</font></p>
+
+<p><font size="2" face="Arial">AllowBadMachineId=1</font></p>
+
+<p><font size="2" face="Arial">AllowLowBandwidth=1</font></p>
+
+<p><font size="2" face="Arial">MinimumSecondsToLogin=0</font></p>
+
+<p><font size="2" face="Arial">PermissionMaxPoints=0</font></p>
+
+<p><font size="2" face="Arial">PermissionMode=0</font></p>
+
+<p><font size="2" face="Arial">AutoPermissionPoints=0</font></p>
+
+<p><font size="2" face="Arial">AutoPermissionIDList=0</font></p>
+
+<p><font size="2" face="Arial">AutoPermissionMessage=Congratulations</font></p>
+
+<p><font size="2" face="Arial"><i>Don&#146;t change any of these.</i></font></p>
+
+<p><font size="2" face="Arial"></font>&nbsp;</p>
+
+<p><font size="2" face="Arial"></font>&nbsp;</p>
+
+<p><font size="2" face="Arial">[Password]</font></p>
+
+<p><font size="2" face="Arial">SysopPassword=secrets</font></p>
+
+<p><font size="2" face="Arial">This is the password that must be
+entered in oreder to be a sysop in this zone. A sysop password
+MUST have an * typed in front of it. Thus to log in as a sysop in
+this zone I would type *secrets. OR you can add this pass word to
+your log in password and always be a sysop when you enter a zone.
+Add *password to you log in password.</font></p>
+
+<p><font size="2" face="Arial">EnergyPassword=energy</font></p>
+
+<p><font size="2" face="Arial">This password allows the player to
+see other peoples energy. This must be activated by the *energy
+command.</font></p>
+
+<p><font size="2" face="Arial">ModeratorPassword=moderator</font></p>
+
+<p><font size="2" face="Arial">See SYSOP txt file for command
+list.</font></p>
+
+<p><font size="2" face="Arial">SuperModeratorPassword=supermoderatorpassword</font></p>
+
+<p><font size="2" face="Arial">See SYSOP txt file for command
+list.</font></p>
+
+<p><font size="2" face="Arial">VIPPassword=vip.</font></p>
+
+<p><font size="2" face="Arial">VIP&#146;s are always able to log
+into a zone even if full.</font></p>
+
+<p><font size="2" face="Arial"></font>&nbsp;</p>
+
+<p><font size="2" face="Arial">[Billing]</font></p>
+
+<p><font size="2" face="Arial">LogMessages=0</font></p>
+
+<p><font size="2" face="Arial"><i>Don&#146;t touch this.</i></font></p>
+
+<p><font size="2" face="Arial">IP=127.0.0.1</font></p>
+
+<p><font size="2" face="Arial"><i>This is the IP where the
+billing server is located 127.0.0.1 is the local machine.</i></font></p>
+
+<p><font size="2" face="Arial">Password=billingpassword</font></p>
+
+<p><font size="2" face="Arial"><i>This password has to match the
+password in the billing.ini</i></font></p>
+
+<p><font size="2" face="Arial">ServerName=WARZONE PowerLeague</font></p>
+
+<p><font size="2" face="Arial">This is the name of the server as
+it will appear on VIE.s directory and on your Billing server.</font></p>
+
+<p><font size="2" face="Arial">Port=900</font></p>
+
+<p><font size="2" face="Arial"><i>This is the port that the
+billing server resides on. This must match the port in the
+billing.ini</i></font></p>
+
+<p><font size="2" face="Arial">ServerId=5000</font></p>
+
+<p><font size="2" face="Arial"><i>Each ZONE must have a unique ID
+number we usually make this number the same as the port and the
+score ID.</i></font></p>
+
+<p><font size="2" face="Arial">GroupId=1</font></p>
+
+<p><font size="2" face="Arial"><i>Don&#146;t touch this. </i></font></p>
+
+<p><font size="2" face="Arial">ScoreId=5000</font></p>
+
+<p><font size="2" face="Arial"><i>Each ZONE must have a score ID.
+For ease of remembering we make this number the same as the port
+and the server ID.</i></font></p>
+
+<p><font size="2" face="Arial">ReconnectTime=12000</font></p>
+
+<p><font size="2" face="Arial"><i>How long the server stays in
+standalone mode before it attempts to reconnect to the billing
+server.</i></font></p>
+
+<p><font size="2" face="Arial">AttemptTime=6400</font></p>
+
+<p><font size="2" face="Arial"><i>How long the server attempts to
+connect to the billing server before it goes into stand alone
+mode.</i></font></p>
+
+<p><font size="2" face="Arial"><i></i></font>&nbsp;</p>
+
+<p><font size="2" face="Arial"></font>&nbsp;</p>
+
+<p><font size="2" face="Arial">[Advertise]</font></p>
+
+<p><font size="2" face="Arial"><i>You have the ability to place
+small. bmps in your game which can be ads or background art. To
+place an ad simply made a .bmp (64*64 is best) in the SS pallette
+and call them ad0.bmp,ad1.bmp etc etc. The server will randomly
+pick one to display to the user.</i></font></p>
+
+<p><font size="2" face="Arial">SendMode=0</font></p>
+
+<p><font size="2" face="Arial"><i>0= don&#146;t send any
+advertisments. 1= send them when the player enters the zone only.
+2= send them when player dies. 3=when he enters game AND when he
+dies.</i></font></p>
+
+<p><font size="2" face="Arial">DisplayMode=2</font></p>
+
+<p><font size="2" face="Arial"><i>0= at top of screen behind all
+other art, 1=at top of screen on top of all other art, 2=floating
+around like a backdrop</i></font></p>
+
+<p><font size="2" face="Arial">Duration=12000</font></p>
+
+<p><font size="2" face="Arial"><i>The length of display for the
+ad in ms.</i></font></p>
+
+<p><font size="2" face="Arial"></font>&nbsp;</p>
+
+<p><font size="2" face="Arial">[Directory]</font></p>
+
+<p><font size="2" face="Arial">IP=sscentral.vie.com</font></p>
+
+<p><font size="2" face="Arial"><i>This is where you wish to
+register you server. At present there is only one directory
+server but others will be made available in due course.</i></font></p>
+
+<p><font size="2" face="Arial">Description=Powerball league zone.</font></p>
+
+<p><font size="2" face="Arial"><i>This is a descrption of the
+zone that will appear in the directory servers description</i></font></p>
+
+<p><font size="2" face="Arial">NamePassword=cane</font></p>
+
+<p><font size="2" face="Arial">Port=4991</font></p>
+
+<p><font size="2" face="Arial"></font>&nbsp;</p>
+
+<p><font size="2" face="Arial"></font>&nbsp;</p>
+
+<p><font size="2" face="Arial">SERVER.SET file</font></p>
+
+<p><font size="2" face="Arial">This file is the one that is
+downloaded to your hard drive when you use the &quot;get
+settings&quot; command from inside the game. It includes the
+current values of the setting. For example the first line of a
+.SET file might look like this&#133;</font></p>
+
+<p><font size="2" face="Arial"></font>&nbsp;</p>
+
+<p><font face="Arial"><i>Bomb:BombDamageLevel:750:0:32000:Amount
+of damage a bomb causes at its center point (for all bomb levels)</i></font></p>
+
+<p><font size="2" face="Arial"></font>&nbsp;</p>
+
+<p><font face="Arial"><i>Bomb:BombDamageLevel</i></font></p>
+
+<p><font size="2" face="Arial">The first name &quot;BOMB&quot;
+gives the category that this parameter fits into. In this case
+the &quot;BOMB&quot; area. The second gives a description of the
+parameter &quot;BombDamageLevel&quot; This tells you that this
+parameter sets the damage level for bombs.</font></p>
+
+<p><font size="2" face="Arial"></font>&nbsp;</p>
+
+<p><font face="Arial"><i>:750:0:32000:</i></font></p>
+
+<p><font size="2" face="Arial">Now there are THREE NUMBERS
+seperated by a &quot;:&quot; EG: 750:0:32000</font></p>
+
+<p><font size="2" face="Arial">Going from left to right these
+numbers are</font></p>
+
+<p><font size="2" face="Arial">THE CURRENT SETTING (in this case
+750)</font></p>
+
+<p><font size="2" face="Arial">THE MINIMUM SETTING (in this case
+0)</font></p>
+
+<p><font size="2" face="Arial">THE MAXIMUM SETTING (in this case
+32000)</font></p>
+
+<p><font size="2" face="Arial"></font>&nbsp;</p>
+
+<p><font size="2" face="Arial">So this means that the standard
+bomb damage level at the center point for bombs is 750 you could
+change it from any number between zero and 32000</font></p>
+
+<p><font size="2" face="Arial"></font>&nbsp;</p>
+
+<p><font face="Arial"><i>Amount of damage a bomb causes at its
+center point (for all bomb levels)</i></font></p>
+
+<p><font size="2" face="Arial">Finally there is a brief
+description of the parameter that usually tells you all you need
+to know about the item. </font></p>
+
+<p><font size="2" face="Arial"></font>&nbsp;</p>
+
+<p><font size="2" face="Arial"></font>&nbsp;</p>
+
+<p><font size="2" face="Arial"></font>&nbsp;</p>
+
+<p><font size="2" face="Arial"></font>&nbsp;</p>
+
+<p><font size="2" face="Arial"></font>&nbsp;</p>
+
+<p><font size="2" face="Arial"></font>&nbsp;</p>
+
+<p><font size="2" face="Arial">SERVER.CFG file</font></p>
+
+<p><font size="2" face="Arial"></font>&nbsp;</p>
+
+<p><font size="2" face="Arial">This is the main controlling file
+for your zones gameplay. Lets go through all of the parameters.
+If you are having difficulty with a paremter do a WORD search of
+this document to take you to it. Or if its not there then post on
+the SERVER WEB BOARD (there is a link from the SubSpace client in
+the full version)</font></p>
+
+<p><font size="2" face="Arial"></font>&nbsp;</p>
+
+<p><font size="2" face="Arial"></font>&nbsp;</p>
+
+<p><font size="2" face="Arial"></font>&nbsp;</p>
+
+<p><font size="2" face="Arial"></font>&nbsp;</p>
+
+<p><font size="2" face="Arial">How do you read entries?</font></p>
+
+<p><font size="2" face="Arial"></font>&nbsp;</p>
+
+<p><font size="2" face="Arial">A typical entry looks something
+like this&#133;&#133;</font></p>
+
+<p><font size="2" face="Arial"></font>&nbsp;</p>
+
+<p><font size="2" face="Arial">PrizeWeight:QuickCharge:0:0:255:Likelyhood
+of 'Full Energy' prize appearing</font></p>
+
+<p><font size="2" face="Arial">PrizeWeight:Energy:0:0:255:Likelyhood
+of 'Energy Upgrade' prize appearing</font></p>
+
+<p><font size="2" face="Arial">PrizeWeight:Rotation:0:0:255:Likelyhood
+of 'Rotation' prize appearing</font></p>
+
+<p><font size="2" face="Arial">PrizeWeight:Stealth:0:0:255:Likelyhood
+of 'Stealth' prize appearing</font></p>
+
+<p><font size="2" face="Arial">PrizeWeight:Cloak:0:0:255:Likelyhood
+of 'Cloak' prize appearing</font></p>
+
+<p><font size="2" face="Arial">PrizeWeight:AntiWarp:0:0:255:Likelyhood
+of 'AntiWarp' prize appearing</font></p>
+
+<p><font size="2" face="Arial"></font>&nbsp;</p>
+
+<p><font size="2" face="Arial">Lets run down the columns&#133;</font></p>
+
+<p><font size="2" face="Arial"></font>&nbsp;</p>
+
+<p><font size="2" face="Arial">First off all look to the far
+right of the first column. This gives you a rough idea of what
+the entry is about, in this case it says..</font></p>
+
+<p><font size="2" face="Arial"></font>&nbsp;</p>
+
+<p><font size="2" face="Arial">&quot;Likelyhood of 'Full Energy'
+prize appearing&quot;</font></p>
+
+<p><font size="2" face="Arial"></font>&nbsp;</p>
+
+<p><font size="2" face="Arial">This means that the line sets a
+number that determines how likely it is that the prize a player
+picks up is a FULL ENERGY prize. This does NOT govern how many
+prizes appear (that&#146;s another parameter) merely what KIND of
+prize it will be.</font></p>
+
+<p><font size="2" face="Arial"></font>&nbsp;</p>
+
+<p><font size="2" face="Arial">Next there are three numbers that
+in this case are..</font></p>
+
+<p><font size="2" face="Arial"></font>&nbsp;</p>
+
+<p><font size="2" face="Arial">&quot;0:0:255:&quot;</font></p>
+
+<p><font size="2" face="Arial"></font>&nbsp;</p>
+
+<p><font size="2" face="Arial">The first number is what you have
+the parameter set to. The second is the minimum possible to set
+it to. The Third number is the maximum possible to set it to. As
+it is set to zero that prize will never appear. However if you
+set it above zero then the probability is based on a comparison
+of how likely compared to other prizes you want it to be. For
+example if you set all your prizes to a number between 1 and 100
+then the prize set to 100 would appear most frequently but a
+prize set to 1 would appear around 1 in 100 times. It IS possible
+to have numbers the same for prizes of equal value.</font></p>
+
+<p><font size="2" face="Arial">NOTE: In OUR examples below there
+are only two numbers eg:0:255 these are the maximum and minimum.</font></p>
+
+<p><font size="2" face="Arial"></font>&nbsp;</p>
+
+<p><font size="2" face="Arial"></font>&nbsp;</p>
+
+<p><font size="2" face="Arial">Next is only piece of text that
+gives a short text note to what the parameter is about. In this
+case.</font></p>
+
+<p><font size="2" face="Arial"></font>&nbsp;</p>
+
+<p><font size="2" face="Arial">&quot;Quickcharge&quot;</font></p>
+
+<p><font size="2" face="Arial"></font>&nbsp;</p>
+
+<p><font size="2" face="Arial">Finally the category of prize is
+listed. In this case.</font></p>
+
+<p><font size="2" face="Arial"></font>&nbsp;</p>
+
+<p><font size="2" face="Arial">&quot;PrizeWeight&quot;</font></p>
+
+<p><font size="2" face="Arial"></font>&nbsp;</p>
+
+<p><font size="2" face="Arial">The only thing you need to worry
+about is the first number. You CANNOT change the minimum or
+maximum (the second &amp; third numbers) they are there for your
+reference only.</font></p>
+
+<p><font size="2" face="Arial"></font>&nbsp;</p>
+
+<p><font size="2" face="Arial">THE PARAMETERS</font></p>
+
+<p><font size="2" face="Arial"></font>&nbsp;</p>
+
+<p><font size="2" face="Arial">I will go through all of the
+parameters as if I was making a zone to give you an idea of the
+creation process. The prefered method is to change these
+parameters WITHIN the game by using the ESC C command. This gives
+you a reminder of which parameter does what and a breif
+explantation.</font></p>
+
+<p><font size="2" face="Arial">&nbsp;</font><font face="Arial"><i>+Bomb:BombDamageLevel:0:32000:Amount
+of damage a bomb causes at its center point (for all bomb levels)</i></font></p>
+
+<p><font face="Arial">This is the amount of damage that a bomb
+does at &quot;ground zero&quot;. All bombs actually do the same
+amount of damage at the impact point but larger bombs have larger
+blast radii. The damage is reduced exponentially from the point
+of ground zero. </font></p>
+
+<p><font face="Arial"></font>&nbsp;</p>
+
+<p><font face="Arial"><i>+Bomb:BombAliveTime:100:12000:Time bomb
+is alive (in hundredths of a second</i>)</font></p>
+
+<p><font face="Arial">Bombs have a built in &quot;expiration
+date&quot; that is measured in milliseconds. Thus if you fire any
+bomb it will disappear after this time. We do not allow bombs to
+go on forever until they hit the edge of the map because of the
+addition traffic that this would cause with an arena of many
+players, however you may want to up this time limit for smaller
+player games.</font></p>
+
+<p><font face="Arial"></font>&nbsp;</p>
+
+<p><font face="Arial"><i>+Bomb:BombExplodeDelay:0:250:How long
+after the proximity sensor is triggered before bomb explodes.
+(note: it explodes immediately if ship moves away from it after
+triggering it)</i></font></p>
+
+<p><font face="Arial">Bombs in SubSpace are actually semi-smart
+this delay is the amount of time (in ms) the bomb will wait for
+the target to move closer before exploding. Bombs will
+automatically detonate if the closest enemy ship to it starts to
+move away thus ensuring the most amount of damage. </font></p>
+
+<p><font face="Arial"></font>&nbsp;</p>
+
+<p><font face="Arial"><i></i></font>&nbsp;</p>
+
+<p><font face="Arial"><i>+Bomb:BombExplodePixels:1:250:Blast
+radius in pixels for an L1 bomb (L2 bombs double this, L3 bombs
+triple this)</i></font></p>
+
+<p><font face="Arial">This is the blast radius in pixels of each
+level of bombs. The initial setting is for level one bombs and
+from then on it is multiplied by the bomb level. </font></p>
+
+<p><font face="Arial"></font>&nbsp;</p>
+
+<p><font face="Arial"></font>&nbsp;</p>
+
+<p><font face="Arial"><i>+Bomb:ProximityDistance:0:10:Radius of
+proximity trigger in tiles. Each bomb level adds 1 to this amount</i>.</font></p>
+
+<p><font face="Arial">The bomb proximity radius is measured in
+tiles (squares of 8 pixels) rather than actual pixels. Thus you
+can have a bomb that will detonate even when it can do no damage
+to the nearest enemy or a bomb whose fuse turns on only when the
+target is well within the blast radius. This setting is for level
+1 bombs, each levl of bombs adds 1 tile. </font></p>
+
+<p><font face="Arial"></font>&nbsp;</p>
+
+<p><font face="Arial"><i>+Bomb:JitterTime:0:250:How long the
+screen jitters from a bomb hit. (in hundredths of a second</i>)</font></p>
+
+<p><font face="Arial">When a bomb explodes a special effect of
+the screen &quot;wobbling&quot; happens. This can be increased if
+you want the bombs to feel beefier.</font></p>
+
+<p><font face="Arial"></font>&nbsp;</p>
+
+<p><font face="Arial"><i>+Bomb:BombSafety:0:1:Whether proximity
+bombs have a firing safety (0=no 1=yes). If enemy ship is within
+proximity radius, will it allow you to fire</i>.</font></p>
+
+<p><font face="Arial">This safety fuse will not allow you to fire
+a bomb if an enemy is so close that it would cause you harm. You
+can turn this off if you want to live a little &quot;wild&quot;. </font></p>
+
+<p><font face="Arial"></font>&nbsp;</p>
+
+<p><font face="Arial"></font>&nbsp;</p>
+
+<p><font face="Arial"><i>+Bomb:EBombShutdownTime:0:32000:Maximum
+time recharge is stopped on players hit with an EMP bomb.</i></font></p>
+
+<p><font face="Arial">This is the amount of time that the enemies
+recharge rate is stopped for when they are hit by an EMP bomb (as
+fired by the weasel usually).</font></p>
+
+<p><font face="Arial"></font>&nbsp;</p>
+
+<p><font face="Arial"><i>+Bomb:EBombDamagePercent:0:2000:Percentage
+of normal damage applied to an EMP bomb 0=0% 1000=100% 2000=200%</i></font></p>
+
+<p><font face="Arial">This is the amount of &quot;real&quot;
+damage inflicted by an EMP bomb when it explodes in addition to
+its shutdown damage. </font></p>
+
+<p><font face="Arial"></font>&nbsp;</p>
+
+<p><font face="Arial"><i>+Bomb:BBombDamagePercent:0:2000:Percentage
+of normal damage applied to a bouncing bomb 0=0% 1000=100%
+2000=200%</i></font></p>
+
+<p><font face="Arial">If you want a bouncing bomb can do more or
+less damage than usual. You can set it to upto 200% of regular
+bombs</font></p>
+
+<p><font face="Arial"></font>&nbsp;</p>
+
+<p><font face="Arial"></font>&nbsp;</p>
+
+<p><font face="Arial"><i>Brick:BrickTime:500:30000:How long
+bricks last (in hundredths of a second)</i></font></p>
+
+<p><font face="Arial">This is how long a brick lasts before it
+disappears (in MS)</font></p>
+
+<p><font face="Arial"></font>&nbsp;</p>
+
+<p><font face="Arial"><i>Brick:BrickSpan:1:100:How many tiles
+bricks are able to span</i></font></p>
+
+<p><font face="Arial">This is how large a brick is when dropped
+in tiles (a tile is 8 pixels)</font></p>
+
+<p><font face="Arial"></font>&nbsp;</p>
+
+<p><font face="Arial"></font>&nbsp;</p>
+
+<p><font face="Arial"><i>+Bullet:BulletDamageLevel:0:32000:Maximum
+amount of damage that a L1 bullet will cause</i></font></p>
+
+<p><font face="Arial">The amount of damage that a level one
+bullet will cause. This is subtracted from the targets energy.</font></p>
+
+<p><font face="Arial"></font>&nbsp;</p>
+
+<p><font face="Arial"><i>+Bullet:BulletDamageUpgrade:0:32000:Amount
+of extra damage each bullet level will cause</i></font></p>
+
+<p><font face="Arial">Unlike bombs bullets damage increases by a
+fixed amount of damage rather than a multiplier. Thus is this
+number is set to 100 a level three bomb will cause the base
+bullet damage plus 200.</font></p>
+
+<p><font face="Arial"><i></i></font>&nbsp;</p>
+
+<p><font face="Arial"><i>+Bullet:BulletAliveTime:100:1000:How
+long bullets live before disappearing (in hundredths of a second)</i></font></p>
+
+<p><font face="Arial">This is the lifetime of each bullet in ms
+before it disappears. For latency reasons you should rarely
+increase this number although in smaller zones this may be
+applicable.</font></p>
+
+<p><font face="Arial"></font>&nbsp;</p>
+
+<p><font face="Arial"></font>&nbsp;</p>
+
+<p><font face="Arial"><i>+Burst:BurstDamageLevel:0:5000:Maximum
+amount of damage caused by a single burst bullet.</i></font></p>
+
+<p><font face="Arial">This is the amount of damage that a bullet
+from the &quot;burst&quot; weapon inflicts.</font></p>
+
+<p><font face="Arial"></font>&nbsp;</p>
+
+<p><font face="Arial"></font>&nbsp;</p>
+
+<p><font face="Arial"><i>+Cost:PurchaseAnytime:0:1:Where prizes
+can be purchased 0 = safe zone, 1 = anywhere</i></font></p>
+
+<p><font face="Arial">You can allow players to purchase items
+from their score by using the ?buy command if you wish. This
+parameter determines whether or not players need to be in a safe
+zone to buy items or whether he can buy them anywhere. </font></p>
+
+<p><font face="Arial"></font>&nbsp;</p>
+
+<p><font face="Arial"><i>+Cost:Recharge:0:32000:Cost (in points)
+to purchase this prize</i></font></p>
+
+<p><font face="Arial"><i>+Cost:Energy:0:32000:Cost (in points) to
+purchase this prize</i></font></p>
+
+<p><font face="Arial"><i>+Cost:Rotation:0:32000:Cost (in points)
+to purchase this prize</i></font></p>
+
+<p><font face="Arial"><i>+Cost:Stealth:0:32000:Cost (in points)
+to purchase this prize</i></font></p>
+
+<p><font face="Arial"><i>+Cost:Cloak:0:32000:Cost (in points) to
+purchase this prize</i></font></p>
+
+<p><font face="Arial"><i>+Cost:XRadar:0:32000:Cost (in points) to
+purchase this prize</i></font></p>
+
+<p><font face="Arial"><i>+Cost:Gun:0:32000:Cost (in points) to
+purchase this prize</i></font></p>
+
+<p><font face="Arial"><i>+Cost:Bomb:0:32000:Cost (in points) to
+purchase this prize</i></font></p>
+
+<p><font face="Arial"><i>+Cost:Bounce:0:32000:Cost (in points) to
+purchase this prize</i></font></p>
+
+<p><font face="Arial"><i>+Cost:Thrust:0:32000:Cost (in points) to
+purchase this prize</i></font></p>
+
+<p><font face="Arial"><i>+Cost:Speed:0:32000:Cost (in points) to
+purchase this prize</i></font></p>
+
+<p><font face="Arial"><i>+Cost:MultiFire:0:32000:Cost (in points)
+to purchase this prize</i></font></p>
+
+<p><font face="Arial"><i>+Cost:Prox:0:32000:Cost (in points) to
+purchase this prize</i></font></p>
+
+<p><font face="Arial"><i>+Cost:Super:0:32000:Cost (in points) to
+purchase this prize</i></font></p>
+
+<p><font face="Arial"><i>+Cost:Shield:0:32000:Cost (in points) to
+purchase this prize</i></font></p>
+
+<p><font face="Arial"><i>+Cost:Shrap:0:32000:Cost (in points) to
+purchase this prize</i></font></p>
+
+<p><font face="Arial"><i>+Cost:AntiWarp:0:32000:Cost (in points)
+to purchase this prize</i></font></p>
+
+<p><font face="Arial"><i>+Cost:Repel:0:32000:Cost (in points) to
+purchase this prize</i></font></p>
+
+<p><font face="Arial"><i>+Cost:Burst:0:32000:Cost (in points) to
+purchase this prize</i></font></p>
+
+<p><font face="Arial"><i>+Cost:Decoy:0:32000:Cost (in points) to
+purchase this prize</i></font></p>
+
+<p><font face="Arial"><i>+Cost:Thor:0:32000:Cost (in points) to
+purchase this prize</i></font></p>
+
+<p><font face="Arial"><i>+Cost:Brick:0:32000:Cost (in points) to
+purchase this prize</i></font></p>
+
+<p><font face="Arial"><i>+Cost:Rocket:0:32000:Cost (in points) to
+purchase this prize</i></font></p>
+
+<p><font face="Arial"><i>+Cost:Portal:0:32000:Cost (in points) to
+purchase this prize</i></font></p>
+
+<p><font face="Arial">All of the above are the costs in points
+for each item when using the ?buy command. If the item cost is
+zero then the item is unavailable.</font></p>
+
+<p><font face="Arial"></font>&nbsp;</p>
+
+<p><font face="Arial"></font>&nbsp;</p>
+
+<p><font face="Arial"><i>+Door:DoorDelay:100:32000:How often
+doors attempt to switch their state.</i></font></p>
+
+<p><font face="Arial">The doors or &quot;gates&quot; in the
+tileset switch on and off at various rates depending on their
+postion in the tile sets (most changing to least changing left to
+right). This timer determines how often the doors
+&#145;check&#146; to see if they should switch.</font></p>
+
+<p><font face="Arial"></font>&nbsp;</p>
+
+<p><font face="Arial"><i>+Door:DoorMode:-2:255:Door mode (-2=all
+doors completely random, -1=weighted random (some doors open more
+often than others), 0-255=fixed doors (1 bit of byte for each
+door specifying whether it is open or not)</i></font></p>
+
+<p><font face="Arial"></font>&nbsp;</p>
+
+<p><font face="Arial"><i>+Flag:FlaggerOnRadar:0:1:Whether the
+flaggers appear on radar in red 0=no 1=yes</i></font></p>
+
+<p><font face="Arial">DO flag carriers appear on radar? If set to
+ON then enemies will appear red and freinds will appear bright
+yellow.</font></p>
+
+<p><font face="Arial"></font>&nbsp;</p>
+
+<p><font face="Arial"><i>+Flag:FlaggerKillMultiplier:0:255:Number
+of times more points are given to a flagger (1 = double points, 2
+= triple points)</i></font></p>
+
+<p><font face="Arial">When a player is carrying a flag you can
+give him a multiplier for every kill he gets while carrying the
+flag.</font></p>
+
+<p><font face="Arial"></font>&nbsp;</p>
+
+<p><font face="Arial"><i>+Flag:FlaggerGunUpgrade:0:1:Whether the
+flaggers get a gun upgrade 0=no 1=yes</i></font></p>
+
+<p><font face="Arial">When carrying a flag the carrier can have a
+bonus of one gun level if this parameter is set to On. Thus a
+warbird with level three guns carrying a flag will have level 4
+guns.</font></p>
+
+<p><font face="Arial"></font>&nbsp;</p>
+
+<p><font face="Arial"><i>+Flag:FlaggerBombUpgrade:0:1:Whether the
+flaggers get a bomb upgrade 0=no 1=yes</i></font></p>
+
+<p><font face="Arial">When carrying a flag the carrier can have a
+bonus of one bomb level if this parameter is set to On. Thus a
+Leviathan with level three bombs carrying a flag will have level
+4 bombs.</font></p>
+
+<p><font face="Arial"></font>&nbsp;</p>
+
+<p><font face="Arial"><i></i></font>&nbsp;</p>
+
+<p><font face="Arial"><i>+Flag:FlaggerFireCostPercent:0:2000:Percentage
+of normal weapon firing cost for flaggers 0=Super 1000=100%
+2000=200%</i></font></p>
+
+<p><font face="Arial">When carrying a flag the carrier can have
+modified firing energy costs. If set to &quot;super&#146; then
+the carryer fires energy free! The Rabbit zone for example allows
+carriers to fire at 75% energy so you would set the parameter to
+750.</font></p>
+
+<p><font face="Arial"></font>&nbsp;</p>
+
+<p><font face="Arial"></font>&nbsp;</p>
+
+<p><font face="Arial"><i>+Flag:FlaggerDamagePercent:0:2000:Percentage
+of normal damage received by flaggers 0=Invincible 1000=100%
+2000=200%</i></font></p>
+
+<p><font face="Arial">When carrying a flag this is the amount of
+built in &quot;armor&quot; or damage that the carrier takes. Thus
+a setting of 500 then he would only receive 50% of all damage
+inflicted upon him.</font></p>
+
+<p><font face="Arial"></font>&nbsp;</p>
+
+<p><font face="Arial"></font>&nbsp;</p>
+
+<p><font face="Arial"><i>+Flag:FlaggerSpeedAdjustment:-4000:4000:Amount
+of speed adjustment player carrying flag gets (negative numbers
+mean slower)</i></font></p>
+
+<p><font face="Arial">When carrying a flag you can alter how fast
+in comparison to his normal ship he moves. You can speed him up
+or slow him down.</font></p>
+
+<p><font face="Arial"></font>&nbsp;</p>
+
+<p><font face="Arial"></font>&nbsp;</p>
+
+<p><font face="Arial"><i>+Flag:FlaggerThrustAdjustment:-25:5:Amount
+of thrust adjustment player carrying flag gets (negative numbers
+mean less thrust)</i></font></p>
+
+<p><font face="Arial">When carrying a flag this is the amount of
+thrust given or taken away from the flagger.</font></p>
+
+<p><font face="Arial"></font>&nbsp;</p>
+
+<p><font face="Arial"><i>+Flag:FlaggerBombFireDelay:0:32000:Delay
+given to flaggers for firing bombs (0=ships normal firing rate --
+note: please do not set this number less than 20)</i></font></p>
+
+<p><font face="Arial">This is the modified bomb fire rate for
+flag carriers. The delay is in MS.</font></p>
+
+<p><font face="Arial"></font>&nbsp;</p>
+
+<p><font face="Arial"></font>&nbsp;</p>
+
+<p><font face="Arial"><i>Flag:CarryFlags:0:2:Whether the flags
+can be picked up and carried (0=no, 1=yes, 2=yes-one at a time)</i></font></p>
+
+<p><font face="Arial">This parameter sets whether or not flags
+are able to be picked up or not. 0 will give you a turf style
+game, 1 will allow you to pick up as many flags as you like, 2
+will only allow you to pick up flags one at a time (good for
+running style games).</font></p>
+
+<p><font face="Arial"></font>&nbsp;</p>
+
+<p><font face="Arial"><i>+Flag:FlagDropDelay:0:720000:Time before
+flag is dropped by carrier (0=never)</i></font></p>
+
+<p><font face="Arial">This is the amount of time (in ms) that the
+player has after he picks up a flag before he drops it. Setting
+this to zero will allow him to carry it forever ( or until he
+dies).</font></p>
+
+<p><font face="Arial"></font>&nbsp;</p>
+
+<p><font face="Arial"><i>+Flag:FlagDropResetReward:0:32000:Minimum
+kill reward that a player must get in order to have his flag drop
+timer reset.</i></font></p>
+
+<p><font face="Arial">When carrying a flag the player can reset
+the carrying timer to maximum by killing a player with a large
+enough bounty, this parameter sets that bounty.</font></p>
+
+<p><font face="Arial"></font>&nbsp;</p>
+
+<p><font face="Arial"><i>+Flag:EnterGameFlaggingDelay:0:32000:Time
+a new player must wait before they are allowed to see flags</i></font></p>
+
+<p><font face="Arial">When a player enters the zone flags are not
+visible to him for a little while. This parameter sets the timer.</font></p>
+
+<p><font face="Arial"></font>&nbsp;</p>
+
+<p><font face="Arial"></font>&nbsp;</p>
+
+<p><font face="Arial"></font>&nbsp;</p>
+
+<p><font face="Arial"><i>Flag:FlagMode:0:2:Style of flag game
+(0=dropped flags are un-owned, carry all flags to win)(1=dropped
+flags are owned, own all flags to win)(2=Turf style flag game)</i></font></p>
+
+<p><font face="Arial">This parameter sets the game style of a
+flag game. 0 sets the game to a running style game. When a player
+drops a flag it becomes un owned again. The first team to carry
+all flags at once wins. 1 sets the game to a warzone style game
+where even after players have dropped flags they remain
+&quot;owned&quot; until and enemy comes and steals them. The
+first team to own all flags wins. 2 sets the game to static flags
+that can be owned but not carried. This is similar to the
+&#145;turf&quot; zone.</font></p>
+
+<p><font face="Arial"></font>&nbsp;</p>
+
+<p><font face="Arial"><i>+Flag:FlagResetDelay:1000:10000000:Amount
+of time before an un-won flag game is reset (in hundredths of a
+second)</i></font></p>
+
+<p><font face="Arial"></font>&nbsp;</p>
+
+<p><font face="Arial"><i>Flag:MaxFlags:0:32:Maximum number of
+flags in the arena. (0=no flag game</i>)</font></p>
+
+<p><font face="Arial">This is the maximum number of flags that
+are randomly distributed around the map. Setting this to zero
+means that no flags are placed.</font></p>
+
+<p><font face="Arial"></font>&nbsp;</p>
+
+<p><font face="Arial"><i>Flag:RandomFlags:0:1:Whether the actual
+number of flags is randomly picked up to MaxFlags (0=no 1=yes</i>)</font></p>
+
+<p><font face="Arial"></font>&nbsp;</p>
+
+<p><font face="Arial"><i>+Flag:FlagReward:0:5000:Number of points
+given for a flag victory. Formula = (playersInGame * </i></font></p>
+
+<p><font face="Arial"><i>playersInGame * FlagReward / 1000).
+(0=no flag victory is EVER declared)</i></font></p>
+
+<p><font face="Arial">This is the number of points awarded for
+winning the flag game. If this is set to zero then the game goes
+on forever EG: rabbit zone or turf.</font></p>
+
+<p><font face="Arial"></font>&nbsp;</p>
+
+<p><font face="Arial"><i>+Flag:FlagRewardMode:0:1:How flag reward
+points are divided up (0 = each team member gets rewardPoints) (1
+= each team member gets (rewardPoints * numberOfTeamMembers /
+maximumAllowedPerTeam))</i></font></p>
+
+<p><font face="Arial"></font>&nbsp;</p>
+
+<p><font face="Arial"><i>+Flag:FlagTerritoryRadius:0:1024:When
+flagger drops flags, this is how spread out they are (distance
+from drop-centroid in tiles). (note: 0 = special value meaning
+hide flags in center area of board as normal</i>)</font></p>
+
+<p><font face="Arial">This setting determines how far from the
+flag carrier the flags are dropped to give a small spread affect.
+If you always want flags to drop right next to the player then
+set this to 1. If you set it to zero then the flags are dropped
+no where near the player but are rather randomly reset around the
+board, this is the case for the &quot;rabbit&quot; zone.</font></p>
+
+<p><font face="Arial"><i></i></font>&nbsp;</p>
+
+<p><font face="Arial"><i>+Flag:FlagTerritoryRadiusCentroid:0:1024:When
+flagger drops flags, this is how far the drop-centroid is
+randomly adjusted from the actual drop location) (note: 1024 =
+hide anywhere on level)</i></font></p>
+
+<p><font face="Arial"></font>&nbsp;</p>
+
+<p><font face="Arial"><i>+Flag:FriendlyTransfer:0:1:Whether the
+flaggers can transfer flags to other teammates (0=no 1=yes)</i></font></p>
+
+<p><font face="Arial">This parameter sets whether or not freindly
+players can pick up the flag after you drop it. This is not the
+case for the &quot;wazrone&quot; style game but IS the case for
+the &quot;rabbit&quot; zone.</font></p>
+
+<p><font face="Arial"></font>&nbsp;</p>
+
+<p><font face="Arial"><i>+Kill:BountyIncreaseForKill:0:255:Number
+of points added to players bounty each time he kills an opponent.</i></font></p>
+
+<p><font face="Arial">A players bounty can go up because he picks
+up prizes or because he kills other players this parameter sets
+the amount of increase for each kill a player gets. EG: if you
+set this variable to 30 and the player had a bounty of 100 then
+when he killed a player his bounty would increase to 130.</font></p>
+
+<p><font face="Arial"></font>&nbsp;</p>
+
+<p><font face="Arial"><i>+Kill:EnterDelay:200:32000:How long
+after a player dies before he can re-enter the game</i>.</font></p>
+
+<p><font face="Arial">Players will have noticed this most
+evidently in the &quot;powerball&quot; zone. It is a &#145;sin
+bin&#146; or delay after having died. This can actually be very
+useful to give the player a few &quot;insult&quot; moments before
+he re entered the game.</font></p>
+
+<p><font face="Arial"></font>&nbsp;</p>
+
+<p><font face="Arial"><i>+Kill:KillPointsPerFlag:0:250:Number of
+bonus points given to a player based on the number of flags his
+team has (as is done in Turf zone now)</i></font></p>
+
+<p><font face="Arial">Every time count in a flag game (defined
+below) then the player can be awarded a stock amount of points
+for his entire teams flags. This is most evident in the turf
+zone.</font></p>
+
+<p><font face="Arial"></font>&nbsp;</p>
+
+<p><font face="Arial"><i>+Kill:KillPointsMinimumBounty:0:32000:Bounty
+of target must be over this value to get any KillPointsPerFlag
+bonus points.</i></font></p>
+
+<p><font face="Arial"></font>&nbsp;</p>
+
+<p><font face="Arial"></font>&nbsp;</p>
+
+<p><font face="Arial"><i>+Kill:DebtKills:0:250:Number of kills a
+player must get after dying or resetting-ship before he starts
+getting points for kills.</i></font></p>
+
+<p><font face="Arial">You can set the game so that you need to
+get a certain number of KILLS before you receive any points for
+kills. This is useful for games where you really want to
+encourage survival.</font></p>
+
+<p><font face="Arial"></font>&nbsp;</p>
+
+<p><font face="Arial"><i>+Kill:NoRewardKillDelay:0:32000:If you
+kill the same guy twice within this amount of time, you get no
+points for the second kill. (in hundredths of a second)</i></font></p>
+
+<p><font face="Arial">This parameter was put in to stop people
+continually killing a &quot;friend&quot; in order to rack up
+points. It is a timer that gives zero points if you kill the same
+player twice within it.</font></p>
+
+<p><font face="Arial"></font>&nbsp;</p>
+
+<p><font face="Arial"><i>+Kill:BountyRewardPercent:0:5000:Percentage
+of your own bounty added to your reward when you kill somebody
+else.</i></font></p>
+
+<p><font face="Arial">A &quot;rich get richer&quot; scheme that
+encourages survival. Useful in zones where people have stopped
+wanting to get their bounties high to avoid giving enemies so
+many points, by reseting their ships they can effectively remove
+a large amount of points from enemies. By giving a % of the kill
+you encourage people to keep high bounties making nice juicy
+targets.</font></p>
+
+<p><font face="Arial"></font>&nbsp;</p>
+
+<p><font face="Arial"><i>+Kill:FixedKillReward:-1:1000:Fixed
+number of points given for any kill (regardless of bounty) (-1 =
+use bounty as always)</i></font></p>
+
+<p><font face="Arial">Useful for nice simple zones. You could
+design a zone for example that simply gave 1 point per kill and
+the first to 6 kills was the winner. Leaving this at -1 uses the
+standard bounty system.</font></p>
+
+<p><font face="Arial"></font>&nbsp;</p>
+
+<p><font face="Arial"><i>+Kill:JackpotBountyPercent:0:4000:Percentage
+of kill value added to Jackpot 0=No Jackpot Game 1000=100%
+2000=200%</i></font></p>
+
+<p><font face="Arial"></font>&nbsp;</p>
+
+<p><font face="Arial"></font>&nbsp;</p>
+
+<p><font face="Arial">KING OF THE HILL</font></p>
+
+<p><font face="Arial">King of the hill games give players a
+&#145;crown&quot; that they get when the game starts, this crown
+is removed when they die a certain number of times or when a
+timer runs out after which it is removed. The last player in the
+zone with a crown is &quot;king of the hill&quot; and wins the
+game. The following parameters define various aspects of this
+game style.</font></p>
+
+<p><font face="Arial"><i>+King:DeathCount:0:255:Number of deaths
+a player is allowed until his crown is removed</i></font></p>
+
+<p><font face="Arial"><i>+King:ExpireTime:500:720000:Initial time
+given to each player at beginning of 'King of the Hill' round</i></font></p>
+
+<p><font face="Arial"><i>+King:RewardFactor:0:5000:Number of
+points given to winner of 'King of the Hill' round (uses
+FlagReward formula)</i></font></p>
+
+<p><font face="Arial"><i>+King:NonCrownAdjustTime:0:30000:Amount
+of time added for killing a player without a crown</i></font></p>
+
+<p><font face="Arial"><i>+King:NonCrownMinimumBounty:0:32000:Minimum
+amount of bounty a player must have in order to receive the extra
+time.</i></font></p>
+
+<p><font face="Arial"><i>+King:CrownRecoverKills:0:200:Number of
+crown kills a non-crown player must get in order to get their
+crown back.</i></font></p>
+
+<p><font face="Arial"></font>&nbsp;</p>
+
+<p><font face="Arial"><i>+Message:AllowAudioMessages:0:1:Whether
+players can send audio messages (0=no 1=yes</i>)</font></p>
+
+<p><font face="Arial">Determines whether or not you allow players
+to send audio clips to each other as set up in the game options
+menu of their cleint. You may wish to disable this if bandwidth
+or audio content is an issue.</font></p>
+
+<p><font face="Arial"></font>&nbsp;</p>
+
+<p><font face="Arial"><i>+Message:QuickMessageLimit:3:10:Maximum
+number of messages that can be sent in a row before player is
+kicked.</i></font></p>
+
+<p><font face="Arial">Some players like to &#145;spam&#146; a
+zone making rather a nuisance of themselves. This parameter sets
+how many messages they can send in a row before they are booted
+off the server. A pause of a few seconds willreset this so you
+can validly send a lot of messages in a team game.</font></p>
+
+<p><font face="Arial"></font>&nbsp;</p>
+
+<p><font face="Arial"><i>+Mine:MineAliveTime:200:60000:Time that
+mines are active (in hundredths of a second)</i></font></p>
+
+<p><font face="Arial">Determines how long mines last in a game.
+Setting this short will create &quot;tactical&quot; mines that
+dissapear quickly, setting it high makes for
+&quot;strategic&quot; mines that will last a long time.</font></p>
+
+<p><font face="Arial"></font>&nbsp;</p>
+
+<p><font face="Arial"><i>+Mine:TeamMaxMines:0:255:Maximum number
+of mines allowed to be placed by an entire team</i></font></p>
+
+<p><font face="Arial">Sets the maximum amount of mines that can
+be set by the WHOLE TEAM, thus if it is set to 10 and there is a
+team of 4 players then once ten mines are set then NO ONE on that
+team can lay any more mines.</font></p>
+
+<p><font face="Arial"><i></i></font>&nbsp;</p>
+
+<p><font face="Arial"><i>Misc:FrequencyShipTypes:0:1:Whether ship
+type is based on frequency player is on or not (0=no 1=yes)</i></font></p>
+
+<p><font face="Arial">If this is set to 1 then freqs 0-5
+determines what kind of ship you can fly. Thus EVERYONE on freq 0
+flys a warbird everyone on 2 a JAV etc.</font></p>
+
+<p><font face="Arial"></font>&nbsp;</p>
+
+<p><font face="Arial"><i>+Misc:WarpPointDelay:100:32000:How long
+a Portal point is active.</i></font></p>
+
+<p><font face="Arial">Sets how long a portal lasta before it
+dissapears, note that a portal is always removed after you have
+used it anyway.</font></p>
+
+<p><font face="Arial"></font>&nbsp;</p>
+
+<p><font face="Arial"><i>+Misc:DecoyAliveTime:200:12000:Time a
+decoy is alive (in hundredths of a second)</i></font></p>
+
+<p><font face="Arial">How long a decoy lasts, Not usually much
+point in setting this too high as it causes lots of confusion J </font></p>
+
+<p><font face="Arial"></font>&nbsp;</p>
+
+<p><font face="Arial"><i>+Misc:BounceFactor:16:255:How bouncy the
+walls are (16=no-speed-loss)</i></font></p>
+
+<p><font face="Arial">This is a fun one. This determines how
+bouncy walls are. Setting it below 16 can lead to a rather solid
+&quot;thump&quot; feel whereas setting it high can lead to a
+crazy bouncy zone J </font></p>
+
+<p><font face="Arial"></font>&nbsp;</p>
+
+<p><font face="Arial"><i>+Misc:SafetyLimit:100:900000:Amount of
+time that can be spent in the safe zone.</i></font></p>
+
+<p><font face="Arial">The amount of time that a player can stay
+in the saftey zone before he is booted. Try to make it only as
+long as a &quot;bathroom break&quot; (or just less if you are
+feeling sadistic). Players who just want to hang and chat should
+be in SPECTATOR mode anyway.</font></p>
+
+<p><font face="Arial"></font>&nbsp;</p>
+
+<p><font face="Arial"><i>+Misc:TickerDelay:100:32000:Amount of
+time between ticker help messages.</i></font></p>
+
+<p><font face="Arial">The delay between HELP ticker messages.</font></p>
+
+<p><font face="Arial"></font>&nbsp;</p>
+
+<p><font face="Arial"><i>+Misc:WarpRadiusLimit:8:1024:When ships
+are randomly placed in the arena, this parameter will limit how
+far from the center of the arena they can be placed
+(1024=anywhere)</i></font></p>
+
+<p><font face="Arial">If you wish you can limit where players
+ships start by this parameter. You should note that even when
+this is set to 1024 the game detects how many players are in the
+zone and the less players there are the more likely they are to
+start at the center anyway (to keep players together in a big
+open map).</font></p>
+
+<p><font face="Arial"></font>&nbsp;</p>
+
+<p><font face="Arial"><i>+Misc:ActivateAppShutdownTime:0:3000:Amount
+of time a ship is shutdown after application is reactivated (ie.
+when they come back from windows mode)</i></font></p>
+
+<p><font face="Arial">Some people just get up to no good. Who
+know what they could be doing when they miminze the program? Thus
+we give them a nice engine shutdown for this amount of time to
+encourage only minimizing when in a safe zone.</font></p>
+
+<p><font face="Arial"></font>&nbsp;</p>
+
+<p><font face="Arial"><i>+Misc:NearDeathLevel:0:800:Amount of
+energy that constitutes a near-death experience (ships bounty
+will be decreased by 1 when this occurs -- used for dueling zone)</i></font></p>
+
+<p><font face="Arial">useful for &quot;marking&quot; players who
+have nearly died in dueling matches.</font></p>
+
+<p><font face="Arial"></font>&nbsp;</p>
+
+<p><font face="Arial"><i>+Misc:VictoryMusic:0:1:Whether the zone
+plays victory music or not.</i></font></p>
+
+<p><font face="Arial">Just before a flag game is won then the
+Victory music can be played. Some people find this annoying and
+you can shut it off with this parameter.</font></p>
+
+<p><font face="Arial"></font>&nbsp;</p>
+
+<p><font face="Arial"><i>+Misc:BannerPoints:0:720000:Number of
+points require to display a banner</i></font></p>
+
+<p><font face="Arial">How many point must be earned in this zone
+before a banner can be set.</font></p>
+
+<p><font face="Arial"></font>&nbsp;</p>
+
+<p><font face="Arial"><i>+Misc:MaxLossesToPlay:0:255:Number of
+deaths before a player is forced into spectator mode (0=never)</i></font></p>
+
+<p><font face="Arial">This is very useful for scenario games
+where you want to limit the amount of deaths a player can have.
+Some of the best scenarios I have played have been &quot;one
+death&quot; zones. After this death you are booted into spec mode
+where you can watch the end of the match.</font></p>
+
+<p><font face="Arial"></font>&nbsp;</p>
+
+<p><font face="Arial"><i>+Misc:SpectatorQuiet:0:1:Whether
+spectators can talk to active players (1=no 0=yes</i>)</font></p>
+
+<p><font face="Arial">This is to stop specators giving hints to
+players in the game when set to off.</font></p>
+
+<p><font face="Arial"></font>&nbsp;</p>
+
+<p><font face="Arial"><i>+Misc:MaxPlaying:0:200:Maximum number of
+players that can be playing at one time (does not count
+spectators, 0=limited only by maximum allowed in arena (not a
+user setting))</i></font></p>
+
+<p><font face="Arial">useful for mass spectator games with only a
+few contestants.</font></p>
+
+<p><font face="Arial"></font>&nbsp;</p>
+
+<p><font face="Arial"><i>Misc:TimedGame:0:10000000:Amount of time
+in a timed game (like speed zone) (0=not a timed game</i>)</font></p>
+
+<p><font face="Arial">The amount of time that a timed game lasts.</font></p>
+
+<p><font face="Arial"></font>&nbsp;</p>
+
+<p><font face="Arial"><i>Misc:ResetScoreOnFrequencyChange:0:1:Whether
+a players score should be reset when they change frequencies
+(used primarily for timed games like soccer</i>)</font></p>
+
+<p><font face="Arial"></font>&nbsp;</p>
+
+<p><font face="Arial"></font>&nbsp;</p>
+
+<p><font face="Arial">The following group of parameters is only
+for those who are very interested in connection speeds. They
+should be rarely changed.</font></p>
+
+<p><font face="Arial"><i>+PacketLoss:C2SKickOutPercent:750:970:ClientToServer
+packetloss percentage before being kicked (this is percentage
+that make it 800 = 80% good or allow 20% packetloss)</i></font></p>
+
+<p><font face="Arial"><i>+PacketLoss:S2CKickOutPercent:750:970:ServerToClient
+packetloss percentage before being kicked (this is percentage
+that make it 800 = 80% good or allow 20% packetloss)</i></font></p>
+
+<p><font face="Arial"><i>+PacketLoss:SpectatorPercentAdjust:0:500:Amount
+of extra packetloss a spectator is allowed to have.</i></font></p>
+
+<p><font face="Arial"></font>&nbsp;</p>
+
+<p><font face="Arial"><i>+Periodic:RewardDelay:0:720000:Time
+interval between each periodic reward (0=no periodic reward)</i></font></p>
+
+<p><font face="Arial">An example of this would be the turf zone
+that gives players a reward based on the flags held by that team
+every few minutes.</font></p>
+
+<p><font face="Arial"><i>+Periodic:RewardMinimumPlayers:1:255:Number
+of players that must be in the arena before periodic rewards will
+occur</i></font></p>
+
+<p><font face="Arial"><i>+Periodic:RewardPoints:-50:1000:Number
+of points given out to team members (per flag owned). (Negative
+numbers = flagCount * playersInArena)</i></font></p>
+
+<p><font face="Arial"></font>&nbsp;</p>
+
+<p><font face="Arial"><i>+Prize:MultiPrizeCount:2:255:Number of
+random 'Greens' given with a 'MultiPrize'</i></font></p>
+
+<p><font face="Arial">The standard setting for this is 10. If you
+wish to give players powerful ships at the start the
+&quot;initial bounty&quot; parameter may be more useful.</font></p>
+
+<p><font face="Arial"><i>+Prize:PrizeFactor:0:5000:Number of
+prizes hidden is based on number of players in game. This number
+adjusts the formula, higher numbers mean more prizes.</i></font></p>
+
+<p><font face="Arial"><i>+Prize:PrizeDelay:100:12000:How often
+prizes are regenerated (in hundredths of a second)</i></font></p>
+
+<p><font face="Arial"><i>+Prize:PrizeHideCount:0:100:Number of
+prizes that are regenerated every PrizeDelay.</i></font></p>
+
+<p><font face="Arial"><i>+Prize:MinimumVirtual:10:512:Distance
+from center of arena that prizes/flags/soccer-balls will generate</i></font></p>
+
+<p><font face="Arial">This number is in tiles (8*8 pixel squares)</font></p>
+
+<p><font face="Arial"><i>+Prize:UpgradeVirtual:0:512:Amount of
+additional distance added to MinimumVirtual for each player that
+is in the game.</i></font></p>
+
+<p><font face="Arial">As more players enter a zone we increase
+the radius that prizes, flags and new players are placed, thus
+with only a few players everything will be placed near the
+center. You can adjust this to make it more spread out if you
+wish.</font></p>
+
+<p><font face="Arial"><i>+Prize:PrizeMaxExist:200:12000:Maximum
+amount of time that a hidden prize will remain on screen. (actual
+time is random)</i></font></p>
+
+<p><font face="Arial">Note that by &quot;hidden&quot; we just
+mean a prize that has appeared in the zone and has not yet been
+picked up.</font></p>
+
+<p><font face="Arial"><i>+Prize:PrizeMinExist:200:12000:Minimum
+amount of time that a hidden prize will remain on screen. (actual
+time is random)</i></font></p>
+
+<p><font face="Arial"><i>+Prize:PrizeNegativeFactor:1:32000:Odds
+of getting a negative prize. (1 = every prize, 32000 = extremely
+rare)</i></font></p>
+
+<p><font face="Arial">Negative prizes REMOVE or downgrade that
+item from a players inventory. Very unpopular item. This will use
+the same table as regular prizes thus the most common UPGRADE
+will be the most common DOWNGRADE,</font></p>
+
+<p><font face="Arial"></font>&nbsp;</p>
+
+<p><font face="Arial"><i>+Prize:DeathPrizeTime:100:12000:How long
+the prize exists that appears after killing somebody.</i></font></p>
+
+<p><font face="Arial">When a player dies he leaves behind a prize
+that can be picked up this determines how long that prize lasts.</font></p>
+
+<p><font face="Arial"></font>&nbsp;</p>
+
+<p><font face="Arial"><i>+Prize:EngineShutdownTime:50:32000:Time
+the player is affected by an 'Engine Shutdown' Prize (in
+hundredth of a second)</i></font></p>
+
+<p><font face="Arial"></font>&nbsp;</p>
+
+<p><font face="Arial"></font>&nbsp;</p>
+
+<p><font face="Arial">The following lists the PROBABILTY of a
+certain prize being generated. Note that the ranger of numbers is
+purely for fine tuning thus if all prizes are set at 255 it will
+have the same effect as if they were all set at 1 however setting
+one prize at 255 and all the others at 1 would result in that
+prize being generated far more often. We usually set all of our
+prize ranges between 1-100. Setting any of these numbers to zero
+results in the prize never appearing.</font></p>
+
+<p><font face="Arial"><i>+PrizeWeight:QuickCharge:1:255:Likelyhood
+of 'Full Energy' prize appearing</i></font></p>
+
+<p><font face="Arial"><i>+PrizeWeight:Energy:0:255:Likelyhood of
+'Energy Upgrade' prize appearing</i></font></p>
+
+<p><font face="Arial"><i>+PrizeWeight:Rotation:0:255:Likelyhood
+of 'Rotation' prize appearing</i></font></p>
+
+<p><font face="Arial"><i>+PrizeWeight:Stealth:0:255:Likelyhood of
+'Stealth' prize appearing</i></font></p>
+
+<p><font face="Arial"><i>+PrizeWeight:Cloak:0:255:Likelyhood of
+'Cloak' prize appearing</i></font></p>
+
+<p><font face="Arial"><i>+PrizeWeight:AntiWarp:0:255:Likelyhood
+of 'AntiWarp' prize appearing</i></font></p>
+
+<p><font face="Arial"><i>+PrizeWeight:XRadar:0:255:Likelyhood of
+'XRadar' prize appearing</i></font></p>
+
+<p><font face="Arial"><i>+PrizeWeight:Warp:0:255:Likelyhood of
+'Warp' prize appearing</i></font></p>
+
+<p><font face="Arial"><i>+PrizeWeight:Gun:0:255:Likelyhood of
+'Gun Upgrade' prize appearing</i></font></p>
+
+<p><font face="Arial"><i>+PrizeWeight:Bomb:0:255:Likelyhood of
+'Bomb Upgrade' prize appearing</i></font></p>
+
+<p><font face="Arial"><i>+PrizeWeight:BouncingBullets:0:255:Likelyhood
+of 'Bouncing Bullets' prize appearing</i></font></p>
+
+<p><font face="Arial"><i>+PrizeWeight:Thruster:0:255:Likelyhood
+of 'Thruster' prize appearing</i></font></p>
+
+<p><font face="Arial"><i>+PrizeWeight:TopSpeed:0:255:Likelyhood
+of 'Speed' prize appearing</i></font></p>
+
+<p><font face="Arial"><i>+PrizeWeight:Recharge:0:255:Likelyhood
+of 'Recharge Rate' prize appearing</i></font></p>
+
+<p><font face="Arial"><i>+PrizeWeight:MultiFire:0:255:Likelyhood
+of 'MultiFire' prize appearing</i></font></p>
+
+<p><font face="Arial"><i>+PrizeWeight:Proximity:0:255:Likelyhood
+of 'Proximity Bomb' prize appearing</i></font></p>
+
+<p><font face="Arial"><i>+PrizeWeight:Glue:0:255:Likelyhood of
+'Engine Shutdown' prize appearing</i></font></p>
+
+<p><font face="Arial"><i>+PrizeWeight:AllWeapons:0:255:Likelyhood
+of 'Super!' prize appearing</i></font></p>
+
+<p><font face="Arial"><i>+PrizeWeight:Shields:0:255:Likelyhood of
+'Shields' prize appearing</i></font></p>
+
+<p><font face="Arial"><i>+PrizeWeight:Shrapnel:0:255:Likelyhood
+of 'Shrapnel Upgrade' prize appearing</i></font></p>
+
+<p><font face="Arial"><i>+PrizeWeight:Repel:0:255:Likelyhood of
+'Repel' prize appearing</i></font></p>
+
+<p><font face="Arial"><i>+PrizeWeight:Burst:0:255:Likelyhood of
+'Burst' prize appearing</i></font></p>
+
+<p><font face="Arial"><i>+PrizeWeight:Decoy:0:255:Likelyhood of
+'Decoy' prize appearing</i></font></p>
+
+<p><font face="Arial"><i>+PrizeWeight:Thor:0:255:Likelyhood of
+'Thor' prize appearing</i></font></p>
+
+<p><font face="Arial"><i>+PrizeWeight:Portal:0:255:Likelyhood of
+'Portal' prize appearing</i></font></p>
+
+<p><font face="Arial"><i>+PrizeWeight:Brick:0:255:Likelyhood of
+'Brick' prize appearing</i></font></p>
+
+<p><font face="Arial"><i>+PrizeWeight:Rocket:0:255:Likelyhood of
+'Rocket' prize appearing</i></font></p>
+
+<p><font face="Arial"><i>+PrizeWeight:MultiPrize:0:255:Likelyhood
+of 'Multi-Prize' prize appearing</i></font></p>
+
+<p><font face="Arial"></font>&nbsp;</p>
+
+<p><font face="Arial"><i>+Radar:RadarMode:0:4:Radar mode
+(0=normal, 1=half/half, 2=quarters, 3=half/half-see team mates,
+4=quarters-see team mates)</i></font></p>
+
+<p><font face="Arial">In this mode the teams are divided by radar
+map. 1= all odd numbers are on the left and all even on the
+right. When you go into enemy territory then you LOSE ALL RADAR.
+This can be very frightening. 2= Same as 1 but when in enemy
+territory you can see friends on radar. 3= is the same as above
+but divides the zone into 4 areas not 2.</font></p>
+
+<p><font face="Arial"><i></i></font>&nbsp;</p>
+
+<p><font face="Arial"><i>+Radar:RadarNeutralSize:0:1024:Size of
+area between blinded radar zones (in pixels</i>)</font></p>
+
+<p><font face="Arial">This sets up the size of the nuetral
+&quot;buffer&quot; zone where everyone can see (only used with
+RADAR modes 1-4)</font></p>
+
+<p><font face="Arial"></font>&nbsp;</p>
+
+<p><font face="Arial"><i>Radar:MapZoomFactor:8:12:A number
+representing how far you can see on radar</i>.</font></p>
+
+<p><font face="Arial">How far the radar sees. Increasing it makes
+the radar more strategic but increases modem traffic.</font></p>
+
+<p><font face="Arial"></font>&nbsp;</p>
+
+<p><font face="Arial">Parameters for the REPEL (CTRL+SHIFT)
+weapon which hurls opponents away from you.</font></p>
+
+<p><font face="Arial"><i>+Repel:RepelSpeed:500:8000:Speed at
+which players are repelled</i></font></p>
+
+<p><font face="Arial"><i>+Repel:RepelTime:10:500:Time players are
+affected by the repel (in hundredths of a second)</i></font></p>
+
+<p><font face="Arial"><i>+Repel:RepelDistance:0:1000:Number of
+pixels from the player that are affected by a repel.</i></font></p>
+
+<p><font face="Arial"></font>&nbsp;</p>
+
+<p><font face="Arial">Parameters for using the ROCKET (F5) which
+gives a huge increase in speed to the player.</font></p>
+
+<p><font face="Arial"><i>+Rocket:RocketThrust:1:30:Thrust value
+given while a rocket is active.</i></font></p>
+
+<p><font face="Arial"><i>+Rocket:RocketSpeed:0:8000:Speed value
+given while a rocket is active.</i></font></p>
+
+<p><font face="Arial"></font>&nbsp;</p>
+
+<p><font face="Arial"></font>&nbsp;</p>
+
+<p><font face="Arial"><i>+Shrapnel:ShrapnelSpeed:1:6000:Speed
+that shrapnel travels</i></font></p>
+
+<p><font face="Arial"><i>+Shrapnel:InactiveShrapDamage:0:100:Amount
+of damage shrapnel causes in it's first 1/4 second of life</i>.</font></p>
+
+<p><font face="Arial">This parameter was introduced because it
+was discovered that when a bomb landed nearby a player he would
+receive damage from many bullets at once from the shrapnel. To
+avoid this dilemma you can reduce the amount of damage that
+shrapnel does for the first ¼.</font></p>
+
+<p><font face="Arial"><i></i></font>&nbsp;</p>
+
+<p><font face="Arial"><i>+Shrapnel:ShrapnelDamagePercent:0:2000:Percentage
+of normal damage applied to shrapnel (relative to bullets of same
+level) 0=0% 1000=100% 2000=200%</i></font></p>
+
+<p><font face="Arial">using this you can make shrapnel less or
+more powerful. Remember that a players base damage level for
+shrapnel is the same as his CURRENT bullet damage.</font></p>
+
+<p><font face="Arial"></font>&nbsp;</p>
+
+<p><font face="Arial"><i>+Shrapnel:Random:0:1:Whether shrapnel
+spreads in circular or random patterns 0=circular 1=random</i></font></p>
+
+<p><font face="Arial">Good players can avoid predictable shrapnel
+damage so we introduced random shrapnel. You can keep the old
+&quot;classic&quot; look by changing this setting.</font></p>
+
+<p><font face="Arial"></font>&nbsp;</p>
+
+<p><font face="Arial">The following govern the SOCCER or
+POWERBALL game for SubSpace.</font></p>
+
+<p><font face="Arial"><i>+Soccer:BallBounce:0:1:Whether the ball
+bounces off walls (0=ball go through walls, 1=ball bounces off
+walls)</i></font></p>
+
+<p><font face="Arial"><i>+Soccer:AllowBombs:0:1:Whether the ball
+carrier can fire his bombs (0=no 1=yes)</i></font></p>
+
+<p><font face="Arial"><i>+Soccer:AllowGuns:0:1:Whether the ball
+carrier can fire his guns (0=no 1=yes)</i></font></p>
+
+<p><font face="Arial"><i>+Soccer:PassDelay:10:1000:How long after
+the ball is fired before anybody can pick it up (in hundredths of
+a second)</i></font></p>
+
+<p><font face="Arial">This is an important parameter. If you set
+it higher then players can only do long passes as short passes
+will go straight through the freindly player. However if you make
+very short passes possible then lag will mean that players will
+often miss the ball for 200ms anyway.</font></p>
+
+<p><font face="Arial"></font>&nbsp;</p>
+
+<p><font face="Arial"><i>+Soccer:Mode:0:6:Goal configuration
+(0=any goal, 1=left-half/right-half, 2=top-half/bottom-half, </i></font></p>
+
+<p><font face="Arial"><i>3=quadrants-defend-one-goal,
+4=quadrants-defend-three-goals, 5=sides-defend-one-goal,
+6=sides-defend-three-goals)</i></font></p>
+
+<p><font face="Arial">Sets which quad each team can score in. the
+usual is 1 giving the traditional left right game however it can
+be set all the way upto a six team match (you must of course
+place these goals on the map).</font></p>
+
+<p><font face="Arial"></font>&nbsp;</p>
+
+<p><font face="Arial"><i>Soccer:BallCount:0:3:Number of soccer
+balls in the arena (0=soccer game off)</i></font></p>
+
+<p><font face="Arial"><i>+Soccer:SendTime:80:500:How often the
+balls position is updated (note: set larger if you have more
+soccer balls to prevent too much modem traffic)</i></font></p>
+
+<p><font face="Arial"><i>+Soccer:Reward:-32000:5000:Negative
+numbers equal absolute points given, positive numbers use
+FlagReward formula.</i></font></p>
+
+<p><font face="Arial">Soccer:CapturePoints:-1000:1000:If
+positive, these points are distributed to each goal/team. When
+you make a goal, the points get transferred to your goal/team. In
+timed games, team with most points in their goal wins. If one
+team gets all the points, then they win as well. If negative,
+teams are given 1 point for each goal, first team to reach
+-CapturePoints points wins the game.</font></p>
+
+<p><font face="Arial"><i>+Soccer:UseFlagger:0:1:If player with
+soccer ball should use the Flag:Flagger* ship adjustments or not
+(0=no, 1=yes)</i></font></p>
+
+<p><font face="Arial">By setting this to ON you can handicap or
+enhance the soccer ball carrier just as you would a flagger.</font></p>
+
+<p><font face="Arial"></font>&nbsp;</p>
+
+<p><font face="Arial"><i>+Soccer:BallLocation:0:1:Whether the
+balls location is displayed at all times or not (0=not, 1=yes)</i></font></p>
+
+<p><font face="Arial">This refers to the balls position on the
+large radar (ALT).</font></p>
+
+<p><font face="Arial"></font>&nbsp;</p>
+
+<p><font face="Arial"></font>&nbsp;</p>
+
+<p><font face="Arial"><i></i></font>&nbsp;</p>
+
+<p><font face="Arial"><i>Team:MaxFrequency:0:9999:Maximum number
+of frequencies allowed in arena (5 would allow frequencies
+0,1,2,3,4)</i></font></p>
+
+<p><font face="Arial">How many teams you are going to allow in
+your zone. EG: Chaos zone has upto 9999 wheras the POWERBALL zone
+only has 2.</font></p>
+
+<p><font face="Arial"><i></i></font>&nbsp;</p>
+
+<p><font face="Arial"><i>Team:MaxPerTeam:1:100:Maximum number of
+players on a non-private frequency</i></font></p>
+
+<p><font face="Arial"><i>Team:MaxPerPrivateTeam:0:32000:Maximum
+number of players on a private frequency (0=same as MaxPerTeam)</i></font></p>
+
+<p><font face="Arial"><i>+Team:DesiredTeams:1:20:Number of teams
+the server creates when adding new players before it starts
+adding new players to existing teams</i>.</font></p>
+
+<p><font face="Arial">When players add a zone they are added to
+additional freqs until this number is reached then the intial
+freqs are filled out. </font></p>
+
+<p><font face="Arial"></font>&nbsp;</p>
+
+<p><font face="Arial"><i>+Team:ForceEvenTeams:0:10:Whether people
+are allowed to change teams if it would make the teams uneven. 0
+= no restrictions, 1-10 = allowed variance</i></font></p>
+
+<p><font face="Arial">In some games you will want to force
+fairness into the game by keeping the sides balanced (EG:
+powerball). Using this you can restrict people from joining the
+&quot;winning team&quot; .</font></p>
+
+<p><font face="Arial"></font>&nbsp;</p>
+
+<p><font face="Arial"><i>+Team:SpectatorFrequency:0:9999:Frequency
+reserved for spectators (does not have to be within MaxFrequency
+limit)</i></font></p>
+
+<p><font face="Arial"></font>&nbsp;</p>
+
+<p><font face="Arial">Territory parameters are primarily used for
+TURF style games.</font></p>
+
+<p><font face="Arial"><i>+Territory:RewardDelay:0:720000:Time
+interval between each territory reward (0=no territory reward)</i></font></p>
+
+<p><font face="Arial"><i>+Territory:RewardBaseFlags:0:255:Minimum
+number of flags required to receive the territory reward</i></font></p>
+
+<p><font face="Arial"><i>+Territory:RewardMinimumPlayers:0:255:Minimum
+number of players required in game to receive the territory
+reward</i></font></p>
+
+<p><font face="Arial"><i>+Territory:RewardPoints:0:500:Amount of
+points given out to the players at end of each time interval
+(formula is complicated)</i></font></p>
+
+<p><font face="Arial"></font>&nbsp;</p>
+
+<p><font face="Arial"><i>+Toggle:AntiWarpPixels:0:3000:Distance
+Anti-Warp affects other players (in pixels) (note: enemy must
+also be on radar)</i></font></p>
+
+<p><font face="Arial">The ANTIWARP device stops enemies from
+warping away this parameter sets the distance of this holding
+effect.</font></p>
+
+<p><font face="Arial"></font>&nbsp;</p>
+
+<p><font face="Arial"><i>+Wormhole:GravityBombs:0:1:Whether a
+wormhole affects bombs (0=no 1=yes)</i></font></p>
+
+<p><font face="Arial">You can change this etting to allow bombs
+to sail by wormholes without being warped by gravity the way
+bullets do.</font></p>
+
+<p><font face="Arial"><i>+Wormhole:SwitchTime:0:32000:How often
+the wormhole switches its destination.</i></font></p>
+
+<p><font face="Arial">Wormholes will warp ships to the same point
+(or nearby) if they both enter within this time period, This
+allows for wormhole chases. If you want the wormholes to be sure
+fire escape from pursueres then set this to a low number.</font></p>
+
+<p><font face="Arial"></font>&nbsp;</p>
+
+<p><font face="Arial"></font>&nbsp;</p>
+
+<p><font face="Arial">&quot;ALL SHIPS&quot; PARAMTERS. </font></p>
+
+<p><font face="Arial">These are actually set for each ship
+individually so you can customize each ship type. Thus there is
+an &quot;InitialRotation&quot; for the warbird, jav etc all of
+which are independent. We highly recommend taking the existing
+ship models and tweaking them slowly rather than designing a new
+ship from scratch. This six ship types in the game have been
+worked out over 2 years and its very easy to unbalance ship
+types. Tread carefully but dont be afraid to experiment.</font></p>
+
+<p><font face="Arial"><i></i></font>&nbsp;</p>
+
+<p><font face="Arial"><i>All:InitialRotation:0:800:Initial
+rotation rate of the ship (0 = can't rotate, 400 = full rotation
+in 1 second)</i></font></p>
+
+<p><font face="Arial">This parameter sets how much INITIAL
+rotation a ship gets it does not set the MAXIMUM that is set
+elsewhere below.</font></p>
+
+<p><font face="Arial">How fast the ship type rotates.</font></p>
+
+<p><font face="Arial"><i>All:InitialThrust:0:24:Initial thrust of
+ship (0 = none)</i></font></p>
+
+<p><font face="Arial">This parameter sets how much INITIAL thrust
+a ship gets it does not set the MAXIMUM that is set elsewhere
+below.</font></p>
+
+<p><font face="Arial">Be very wary about setting this high.
+Thrust = lag. Any ship more maneuverable than the warbird will
+probably appear jumpy to most Internet users.</font></p>
+
+<p><font face="Arial"><i>All:InitialSpeed:0:6000:Initial speed of
+ship (0 = can't move</i>)</font></p>
+
+<p><font face="Arial">This parameter sets how much INITIAL speed
+a ship gets it does not set the MAXIMUM that is set elsewhere
+below.</font></p>
+
+<p><font face="Arial"><i>All:InitialRecharge:0:32000:Initial
+recharge rate, or how quickly this ship recharges its energy.</i></font></p>
+
+<p><font face="Arial">This parameter sets how much INITIAL
+recharge a ship gets it does not set the MAXIMUM that is set
+elsewhere below.</font></p>
+
+<p><font face="Arial">We have found the recharge rate to be a
+critical parameter. While decreasing can lead to excellent
+&#145;energy&#146; games increasing it tends to make for dull
+zones.</font></p>
+
+<p><font face="Arial"></font>&nbsp;</p>
+
+<p><font face="Arial"><i>All:InitialEnergy:1:32000:Initial amount
+of energy that the ship can have.</i></font></p>
+
+<p><font face="Arial">This parameter sets how much INITIAL
+recharge a ship gets it does not set the MAXIMUM that is set
+elsewhere below.</font></p>
+
+<p><font face="Arial">The &quot;hit points&quot; of SubSpace we
+made it a rule that all ships must be able to get the same amount
+of energy and charge rate however you may find different.</font></p>
+
+<p><font face="Arial"></font>&nbsp;</p>
+
+<p><font face="Arial"><i>All:MaximumRotation:0:800:Maximum
+rotation rate of the ship (0 = can't rotate, 400 = full rotation
+in 1 second)</i></font></p>
+
+<p><font face="Arial">This is the MAXIMUM rotation that can be
+achieved after greening. It is not the INITIAL setting that is
+set above..</font></p>
+
+<p><font face="Arial"></font>&nbsp;</p>
+
+<p><font face="Arial"><i>All:MaximumThrust:0:24:Maximum thrust of
+ship (0 = none)</i></font></p>
+
+<p><font face="Arial">This is the MAXIMUM thrust that can be
+achieved after greening. It is not the INITIAL setting that is
+set above.</font></p>
+
+<p><font face="Arial"><i>All:MaximumSpeed:0:6000:Maximum speed of
+ship (0 = can't move</i>)</font></p>
+
+<p><font face="Arial">This is the MAXIMUM speed that can be
+achieved after greening. It is not the INITIAL setting that is
+set above.</font></p>
+
+<p><font face="Arial"></font>&nbsp;</p>
+
+<p><font face="Arial"><i>All:MaximumRecharge:0:32000:Maximum
+recharge rate, or how quickly this ship recharges its energy.</i></font></p>
+
+<p><font face="Arial">This is the MAXIMUM recharge that can be
+achieved after greening. It is not the INITIAL setting that is
+set above.</font></p>
+
+<p><font face="Arial"></font>&nbsp;</p>
+
+<p><font face="Arial"><i>All:MaximumEnergy:1:32000:Maximum amount
+of energy that the ship can have.</i></font></p>
+
+<p><font face="Arial">This is the MAXIMUM energy that can be
+achieved after greening. It is not the INITIAL setting that is
+set above.</font></p>
+
+<p><font face="Arial"></font>&nbsp;</p>
+
+<p><font face="Arial">These upgrade settings determine how fast
+or slowly a ship gains in each of these areas when its gets a
+green. Thus if you want the Jav to be fast but want it to take a
+long time to achive this speed through greening then you would
+set the UPGRADE THRUST to 1 for the JAV.</font></p>
+
+<p><font face="Arial"><i>All:UpgradeRotation:0:800:Amount added
+per 'Rotation' Prize</i></font></p>
+
+<p><font face="Arial"><i>All:UpgradeThrust:0:24:Amount added per
+'Thruster' Prize</i></font></p>
+
+<p><font face="Arial"><i>All:UpgradeSpeed:0:6000:Amount added per
+'Speed' Prize</i></font></p>
+
+<p><font face="Arial"><i>All:UpgradeRecharge:0:32000:Amount added
+per 'Recharge Rate' Prize</i></font></p>
+
+<p><font face="Arial"><i>All:UpgradeEnergy:0:32000:Amount added
+per 'Energy Upgrade' Prize</i></font></p>
+
+<p><font face="Arial"></font>&nbsp;</p>
+
+<p><font face="Arial">All:CloakStatus:0:2:Whether ships are
+allowed to receive 'Cloak' 0=no 1=yes 2=yes/start-with</font></p>
+
+<p><font face="Arial">In the Standard game only the Spider gets
+cloak but you can give any ship cloak by changing this parameter.</font></p>
+
+<p><font face="Arial"></font>&nbsp;</p>
+
+<p><font face="Arial"><i>All:StealthStatus:0:2:Whether ships are
+allowed to receive 'Stealth' 0=no 1=yes 2=yes/start-with</i></font></p>
+
+<p><font face="Arial"><i>All:XRadarStatus:0:2:Whether ships are
+allowed to receive 'X-Radar' 0=no 1=yes 2=yes/start-with</i></font></p>
+
+<p><font face="Arial"><i>All:AntiWarpStatus:0:2:Whether ships are
+allowed to receive 'Anti-Warp' 0=no 1=yes 2=yes/start-with</i></font></p>
+
+<p><font face="Arial"><i>+All:CloakEnergy:0:32000:Amount of
+energy required to have 'Cloak' activated (thousanths per
+hundredth of a second)</i></font></p>
+
+<p><font face="Arial"><i>+All:StealthEnergy:0:32000:Amount of
+energy required to have 'Stealth' activated (thousanths per
+hundredth of a second)</i></font></p>
+
+<p><font face="Arial"><i>+All:XRadarEnergy:0:32000:Amount of
+energy required to have 'X-Radar' activated (thousanths per
+hundredth of a second)</i></font></p>
+
+<p><font face="Arial"><i>+All:AntiWarpEnergy:0:32000:Amount of
+energy required to have 'Anti-Warp' activated (thousanths per
+hundredth of a second)</i></font></p>
+
+<p><font face="Arial"><i></i></font>&nbsp;</p>
+
+<p><font face="Arial"><i>All:InitialRepel:0:255:Initial number of
+Repels given to ships when they start</i></font></p>
+
+<p><font face="Arial"><i>All:InitialBurst:0:255:Initial number of
+Bursts given to ships when they start</i></font></p>
+
+<p><font face="Arial"><i>All:InitialBrick:0:255:Initial number of
+Bricks given to ships when they start</i></font></p>
+
+<p><font face="Arial"><i>All:InitialRocket:0:255:Initial number
+of Rockets given to ships when they start</i></font></p>
+
+<p><font face="Arial"><i>All:InitialThor:0:255:Initial number of
+Thor's Hammers given to ships when they start</i></font></p>
+
+<p><font face="Arial"><i>All:InitialDecoy:0:255:Initial number of
+Decoys given to ships when they start</i></font></p>
+
+<p><font face="Arial"><i>All:InitialPortal:0:255:Initial number
+of Portals given to ships when they start</i></font></p>
+
+<p><font face="Arial"><i>All:InitialGuns:0:3:Initial level a
+ship's guns fire 0=no guns</i></font></p>
+
+<p><font face="Arial"><i>All:InitialBombs:0:3:Initial level a
+ship's bombs fire 0=no bombs</i></font></p>
+
+<p><font face="Arial"><i>All:RepelMax:0:255:Maximum number of
+Repels allowed in ships</i></font></p>
+
+<p><font face="Arial"><i>All:BurstMax:0:255:Maximum number of
+Bursts allowed in ships</i></font></p>
+
+<p><font face="Arial"><i>All:DecoyMax:0:255:Maximum number of
+Decoys allowed in ships</i></font></p>
+
+<p><font face="Arial"><i>All:ThorMax:0:255:Maximum number of
+Thor's Hammers allowed in ships</i></font></p>
+
+<p><font face="Arial"><i>All:BrickMax:0:255:Maximum number of
+Bricks allowed in ships</i></font></p>
+
+<p><font face="Arial"><i>All:PortalMax:0:255:Maximum number of
+Portals allowed in ships</i></font></p>
+
+<p><font face="Arial"><i>All:MaxGuns:0:3:Maximum level a ship's
+guns can fire 0=no guns</i></font></p>
+
+<p><font face="Arial"><i>All:MaxBombs:0:3:Maximum level a ship's
+bombs can fire 0=no bombs</i></font></p>
+
+<p><font face="Arial">For example in the game we only allow the
+LEVIATHAN to have lev3 bombs but you can configure your ships any
+way you wish.</font></p>
+
+<p><font face="Arial"><i></i></font>&nbsp;</p>
+
+<p><font face="Arial"><i>+All:BulletFireEnergy:0:32000:Amount of
+energy it takes a ship to fire a single L1 bullet</i></font></p>
+
+<p><font face="Arial"><i>+All:BulletSpeed:1:5000:How fast bullets
+travel</i></font></p>
+
+<p><font face="Arial"><i>+All:BulletFireDelay:10:32000:delay that
+ship waits after a bullet is fired until another weapon may be
+fired (in hundredths of a second)</i></font></p>
+
+<p><font face="Arial"><i>+All:MultiFireEnergy:0:32000:Amount of
+energy it takes a ship to fire multifire L1 bullets</i></font></p>
+
+<p><font face="Arial"><i>+All:MultiFireDelay:10:32000:delay that
+ship waits after a multifire bullet is fired until another weapon
+may be fired (in hundredths of a second)</i></font></p>
+
+<p><font face="Arial"><i>+All:MultiFireAngle:0:20000:Angle spread
+between multi-fire bullets and standard forward firing bullets.
+(111 = 1 degree, 1000 = 1 ship-rotation-point)</i></font></p>
+
+<p><font face="Arial">This is a particular favorite of mine. As
+you can see you can easily make rearward or side firing weapons
+using this parameter. See the RABBIT zone weasel on Multifire for
+an example of this. Or you can make a &quot;tight burst&quot;
+multifire ship by decreasing the angle. Do remember that once one
+bullet of a multifre hits however all the others are destroyed so
+you cannot hit a ship with all three bullets at once.</font></p>
+
+<p><font face="Arial"></font>&nbsp;</p>
+
+<p><font face="Arial"><i>+All:DoubleBarrel:0:1:Whether ships fire
+with double barrel bullets 0=no 1=yes</i></font></p>
+
+<p><font face="Arial"><i></i></font>&nbsp;</p>
+
+<p><font face="Arial"><i>+All:BombFireEnergy:0:32000:Amount of
+energy it takes a ship to fire a single bomb</i></font></p>
+
+<p><font face="Arial"><i>+All:BombFireEnergyUpgrade:0:32000:Extra
+amount of energy it takes a ship to fire an upgraded bomb. ie. L2
+= BombFireEnergy+BombFireEnergyUpgrade</i></font></p>
+
+<p><font face="Arial"><i>+All:BombThrust:0:2000:Amount of
+back-thrust you receive when firing a bomb.</i></font></p>
+
+<p><font face="Arial"><i>+All:BombBounceCount:0:255:Number of
+times a ship's bombs bounce before they explode on impact</i></font></p>
+
+<p><font face="Arial"><i>+All:BombSpeed:1:5000:How fast bombs
+travel</i></font></p>
+
+<p><font face="Arial"><i>+All:BombFireDelay:10:32000:delay that
+ship waits after a bomb is fired until another weapon may be
+fired (in hundredths of a second)</i></font></p>
+
+<p><font face="Arial"><i>+All:EmpBomb:0:1:Whether ships fire EMP
+bombs 0=no 1=yes</i></font></p>
+
+<p><font face="Arial"><i></i></font>&nbsp;</p>
+
+<p><font face="Arial"><i>+All:MaxMines:0:20:Maximum number of
+mines allowed in ships</i></font></p>
+
+<p><font face="Arial"><i>+All:SeeMines:0:1:Whether ships see
+mines on radar 0=no 1=yes</i></font></p>
+
+<p><font face="Arial">This setting is limited to the weasel in
+our zones.</font></p>
+
+<p><font face="Arial"></font>&nbsp;</p>
+
+<p><font face="Arial"><i>+All:LandmineFireEnergy:0:32000:Amount
+of energy it takes a ship to place a single L1 mine</i></font></p>
+
+<p><font face="Arial"><i>+All:LandmineFireEnergyUpgrade:0:32000:Extra
+amount of energy it takes to place an upgraded landmine. ie. L2 =
+LandmineFireEnergy+LandmineFireEnergyUpgrade</i></font></p>
+
+<p><font face="Arial"><i>+All:LandmineFireDelay:10:32000:delay
+that ship waits after a mine is fired until another weapon may be
+fired (in hundredths of a second)</i></font></p>
+
+<p><font face="Arial"></font>&nbsp;</p>
+
+<p><font face="Arial"><i>All:ShrapnelMax:0:31:Maximum amount of
+shrapnel released from a ship's bomb</i></font></p>
+
+<p><font face="Arial"><i>All:ShrapnelRate:0:31:Amount of
+additional shrapnel gained by a 'Shrapnel Upgrade' prize.</i></font></p>
+
+<p><font face="Arial"><i>+All:BurstSpeed:1:8000:How fast the
+burst shrapnel is for this ship.</i></font></p>
+
+<p><font face="Arial"><i>+All:BurstShrapnel:1:32:Number of
+bullets released when a 'Burst' is activated</i></font></p>
+
+<p><font face="Arial"></font>&nbsp;</p>
+
+<p><font face="Arial"><i>+All:TurretThrustPenalty:0:24:Amount the
+ship's thrust is decreased with a turret riding</i></font></p>
+
+<p><font face="Arial"><i>+All:TurretSpeedPenalty:0:6000:Amount
+the ship's speed is decreased with a turret riding</i></font></p>
+
+<p><font face="Arial"><i>+All:TurretLimit:0:6:Number of turrets
+allowed on a ship.</i></font></p>
+
+<p><font face="Arial"><i>+All:RocketTime:100:32000:How long a
+Rocket lasts (in hundredths of a second)</i></font></p>
+
+<p><font face="Arial"><i>+All:InitialBounty:0:500:Number of
+'Greens' given to ships when they start</i></font></p>
+
+<p><font face="Arial"><i>+All:AttachBounty:0:32000:Bounty
+required by ships to attach as a turret</i></font></p>
+
+<p><font face="Arial"><i>+All:AfterburnerEnergy:0:32000:Amount of
+energy required to have 'Afterburners' activated.</i></font></p>
+
+<p><font face="Arial"></font>&nbsp;</p>
+
+<p><font face="Arial">+All:DamageFactor:0:5000:How likely a the
+ship is to take damamage (ie. lose a prize)
+(0=special-case-never, 1=extremely likely, 5000=almost never)</font></p>
+
+<p><font face="Arial">+All:PrizeShareLimit:0:32000:Maximum bounty
+that ships receive Team Prizes</font></p>
+
+<p><font face="Arial">In our zones this limit is et to 100, thus
+after 100 bounty you no longer receive team prizes, however you
+may wish to increase this for some ship types to reflect
+&quot;battle computers&quot; or something J </font></p>
+
+<p><font face="Arial"></font>&nbsp;</p>
+
+<p><font face="Arial">+All:SuperTime:500:30000:How long Super
+lasts on the ship (in hundredths of a second)</font></p>
+
+<p><font face="Arial">+All:ShieldsTime:500:30000:How long Shields
+lasts on the ship (in hundredths of a second)</font></p>
+
+<p><font face="Arial">+All:Gravity:0:20000:How strong of an
+effect the wormhole has on this ship (0 = none)</font></p>
+
+<p><font face="Arial">You can configure individual ships to be
+less affected by gravity if you like.</font></p>
+
+<p><font face="Arial">+All:GravityTopSpeed:0:250:Ship are allowed
+to move faster than their maximum speed while effected by a
+wormhole. This determines how much faster they can go (0 = no
+extra speed)</font></p>
+
+<p><font face="Arial"></font>&nbsp;</p>
+
+<p><font face="Arial"></font>&nbsp;</p>
+
+<p><font face="Arial">You can change these settings to make
+different ships handle the soccer ball differently. Perhaps a
+zone where leviathans can carry the ball a long way but cannot
+throw it far who team up with warbirds you can pass very fast but
+cannot carry it for more than 10 seconds etc. </font></p>
+
+<p><font face="Arial"><i>+All:SoccerBallFriction:1:500:Amount the
+friction on the soccer ball (how quickly it slows down -- higher
+numbers mean faster slowdown)</i></font></p>
+
+<p><font face="Arial"><i>+All:SoccerBallProximity:1:200:How close
+the player must be in order to pick up ball (in pixels)</i></font></p>
+
+<p><font face="Arial"><i>+All:SoccerBallSpeed:100:8000:Initial
+speed given to the ball when fired by the carrier.</i></font></p>
+
+<p><font face="Arial"><i>+All:SoccerThrowTime:200:32000:Time
+player has to carry soccer ball (in hundredths of a second)</i></font></p>
+
+<p><font face="Arial"></font>&nbsp;</p>
+
+<p><font size="2" face="Arial"></font>&nbsp;</p>
+</body>
+</html>
