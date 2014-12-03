@@ -1,5 +1,0 @@
-"SubSpace &Home Page","http://subspace.vie.com/index.html"
-"SubSpace &Technical Support","http://subspace.vie.com/techboard/techboard.html"
-"SubSpace &Downloads","http://subspace.vie.com/download.html"
-"&Frequently Asked Questions","http://subspace.vie.com/faq.html"
-
